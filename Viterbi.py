@@ -1,3 +1,5 @@
+from clockdeco import clock
+
 #from wikiipedia ( https://en.wikipedia.org/wiki/Viterbi_algorithm )
 
 obs = ('normal', 'cold', 'dizzy')
@@ -8,7 +10,7 @@ trans_p = {'Healthy' : {'Healthy': 0.7, 'Fever': 0.3},
 emit_p = {'Healthy' : {'normal': 0.5, 'cold': 0.4, 'dizzy': 0.1},
             'Fever' : {'normal': 0.1, 'cold': 0.3, 'dizzy': 0.6}}
 
-
+@clock
 def viterbi(obs, states, start_p, trans_p, emit_p):
 	#Let V be the path probability matrix, where each sub-list entry is a dictionary w/ 'prob' and 'prev'
 	V = [{}]
@@ -31,11 +33,9 @@ def viterbi(obs, states, start_p, trans_p, emit_p):
 	for line in dptable(V):
 		print(line)
 
-
 	# Termination
 	max_prob = max(value["prob"] for value in V[-1].values())
 	previous = None
-
 	# Get most probable state and its backtrack
 	opt = []
 	for st, data in V[-1].items():

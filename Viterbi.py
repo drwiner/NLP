@@ -10,10 +10,15 @@ emit_p = {'Healthy' : {'normal': 0.5, 'cold': 0.4, 'dizzy': 0.1},
 
 
 def viterbi(obs, states, start_p, trans_p, emit_p):
+	#Let V be the path probability matrix, where each sub-list entry is a dictionary w/ 'prob' and 'prev'
 	V = [{}]
+
+	#initialization
 	for st in states:
+		#For each state, what's the probability of being at that state given no previous state
 		V[0][st] = {"prob": start_p[st] * emit_p[st][obs[0]], "prev": None}
-	# Run Viterbi when t > 0
+
+	# Recursive step (t>0)
 	for t in range(1, len(obs)):
 		V.append({})
 		for st in states:
@@ -25,11 +30,14 @@ def viterbi(obs, states, start_p, trans_p, emit_p):
 					break
 	for line in dptable(V):
 		print(line)
-	opt = []
-	# The highest probability
+
+
+	# Termination
 	max_prob = max(value["prob"] for value in V[-1].values())
 	previous = None
+
 	# Get most probable state and its backtrack
+	opt = []
 	for st, data in V[-1].items():
 		if data["prob"] == max_prob:
 			opt.append(st)

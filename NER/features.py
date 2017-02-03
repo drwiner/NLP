@@ -17,6 +17,9 @@ class Row:
 		self.next_pos = next_pos
 		self.next_word = next_word
 
+
+
+
 # label ids
 labels = ['O','B-PER', 'I-PER', 'B-LOC', 'I-LOC', 'B-ORG', 'I-ORG']
 label_dict = dict(zip(labels, list(range(1, len(labels) + 1))))
@@ -105,108 +108,83 @@ def makeIDs(items, last):
 	end = len(items) + start + 1
 	return dict(zip(items, list(range(start, end)))), end
 
+# prev_pos ids
+prev_pos_dict, last = makeIDs({row.prev_pos for row in line_array}, last)
+# next_pos ids
+next_pos_dict, last = makeIDs({row.next_pos for row in line_array}, last)
 # prev_word ids
 prev_word_dict, last = makeIDs({row.prev_word for row in line_array}, last)
-
 # next_word ids
 next_word_dict, last = makeIDs({row.next_word for row in line_array}, last)
 
-# prev_pos ids
-prev_pos_dict, last = makeIDs({row.prev_pos for row in line_array}, last)
+def toFeat(row, feat_type):
+	feats = []
+	feats.append(word_dict[row.word])
+	if feat_type is not 'word':
+		if row.word.istitle():
+			feats.append(binary_cap_id)
 
-# next_pos ids
-next_pos_dict, last = makeIDs({row.next_pos for row in line_array}, last)
+		if feat_type is 'poscon' or feat_type is 'bothcon':
+			feats.append(prev_pos_dict[row.prev_pos])
+			feats.append(next_pos_dict[row.next_pos])
+		if feat_type is 'lexcon' or feat_type is 'bothcon':
+			feats.append(prev_word_dict[row.prev_word])
+			feats.append(next_word_dict[row.next_word])
 
+	feature_str = str(label_dict[row.label]) + ' '
+	for f in feats:
+		feature_str += str(f) + ':1 '
 
-# pos ids
-#train_pos = {line.pos for line in line_array}
-start = binary_cap_id + 1
-end = len(train_pos) + start + 1
-pos_dict = dict(zip(train_pos, list(range(start, end))))
-#test_pos = {line.pos for line in line_array} - train_pos
-#pos_dict.update(dict(zip(test_pos, list(range(index, index + len(test_pos))))))
-
+	return feature_str + '\n'
 
 # debug message
 print('Found {} training instances with {} distinct words and {} distinct POS tags'.format(len(line_array), len(train_words), len(train_pos)))
 print('Found {} test instances'.format(len(line_array_test)))
 
+def generateFeatures(ftype):
+	train = open('train.' + str(ftype), 'w')
+	test = open('test.' + str(ftype), 'w')
 
-def wordFeatures():
-
-	train_word = open('train.word', 'w')
-	test_word = open('test.word', 'w')
-
-	encountered = set()
 	for line in line_array:
-		if line.word not in encountered:
-			train_word.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
-		else:
-			encountered.add(line.word)
+		train.write(toFeat(line, ftype))
+	train.close()
 
-	train_word.close()
-
-	encountered = set()
 	for line in line_array_test:
-		if line.word not in encountered:
-			test_word.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
-		else:
-			encountered.add(line.word)
-
-	test_word.close()
-
-def wordcapFeatures():
-	train_wordcap = open('train.wordcap', 'w')
-	test_wordcap = open('test.wordcap', 'w')
-
-	# wordcap ids
-	binary_cap_id = max(word_dict.values()) + 1
-
-	encountered = set()
-	for line in line_array:
-		if line.word not in encountered:
-			if line.word.istitle():
-				train_wordcap.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1' + ' ' + str(binary_cap_id) + ':1\n')
-			else:
-				train_wordcap.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
-		else:
-			encountered.add(line.word)
-
-	train_wordcap.close()
-
-	encountered = set()
-	for line in line_array_test:
-		if line.word not in encountered:
-			if line.word.istitle():
-				test_wordcap.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1' + ' ' + str(binary_cap_id) + ':1\n')
-			else:
-				test_wordcap.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
-		else:
-			encountered.add(line.word)
-
-	test_wordcap.close()
-
-def posconFeatures():
-	train_poscon = open('train.poscon', 'w')
-	test_poscon = open('test.poscon', 'w')
-
-	# wordcap ids
-	binary_cap_id = max(word_dict.values()) + 1
-	#cap_dict = dict(zip(word_dict.keys(), list(range(index, index + len(word_dict)))))
-
-	# pseudo ids
-	pseduo_labels = ['PHIPOS', 'OMEGAPOS', 'UNKPOS', 'prev-PHIPOS', 'prev-OMEGAPOS', 'prev-UNKPOS', 'next-PHIPOS', 'next-OMEGAPOS', 'next-UNKPOS']
-	pseudo_words = ['PHI', 'OMEGA', 'UNKWORD', 'prev-PHI', 'prev-OMEGA', 'prev-UNKWORD', 'next-PHI', 'next-OMEGA', 'next-UNKWORD']
-
-	pseudo_dict = dict(zip(pseudo_words, list(range(1, len(pseudo_words) + 1))))
-	# poscon ids
+		test.write(toFeat(line, ftype))
+	test.close()
 
 
-#increments dict values starting from starting value
-def incDictValues(d, starting_value):
-	for k, v in d.items():
-		v += starting_value
+# def wordFeatures():
+#
+# 	train_word = open('train.word', 'w')
+# 	test_word = open('test.word', 'w')
+#
+# 	encountered = set()
+# 	for line in line_array:
+# 		if line.word not in encountered:
+# 			train_word.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
+# 		else:
+# 			encountered.add(line.word)
+#
+# 	train_word.close()
+#
+# 	encountered = set()
+# 	for line in line_array_test:
+# 		if line.word not in encountered:
+# 			test_word.write(str(label_dict[line.label]) + ' ' + str(word_dict[line.word]) + ':1\n')
+# 		else:
+# 			encountered.add(line.word)
+#
+# 	test_word.close()
+
+
+	#
+	# # pseudo ids
+	# pseduo_labels = ['PHIPOS', 'OMEGAPOS', 'UNKPOS', 'prev-PHIPOS', 'prev-OMEGAPOS', 'prev-UNKPOS', 'next-PHIPOS', 'next-OMEGAPOS', 'next-UNKPOS']
+	# pseudo_words = ['PHI', 'OMEGA', 'UNKWORD', 'prev-PHI', 'prev-OMEGA', 'prev-UNKWORD', 'next-PHI', 'next-OMEGA', 'next-UNKWORD']
+	# pseudo_dict = dict(zip(pseudo_words, list(range(1, len(pseudo_words) + 1))))
+	# # poscon ids
+
 
 
 #wordFeatures()
-wordcapFeatures()

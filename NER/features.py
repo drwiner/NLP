@@ -21,6 +21,7 @@ label_dict = dict(zip(labels, list(range(1, len(labels) + 1))))
 train_text = open('train.txt')
 test_text  = open('test.txt')
 
+###################### Train ###########################
 line_array = []
 new_sentence = True
 beg = True
@@ -52,8 +53,15 @@ for line in train_text:
 
 line_array[-1].next('OMEGAPOS', 'OMEGA')
 
+prev_pos_set = {row.prev_pos for row in line_array}.union('UNKPOS', 'OMEGAPOS', 'PHIPOS')
+next_pos_set = {row.next_pos for row in line_array}.union('UNKPOS', 'OMEGAPOS', 'PHIPOS')
+prev_word_set = {row.prev_word for row in line_array}.union('UNKWORD', 'OMEGA', 'PHI')
+next_word_set = {row.next_word for row in line_array}.union('UNKWORD', 'OMEGA', 'PHI')
 train_words = {line.word for line in line_array}
 train_pos = {line.pos for line in line_array}
+
+###################### Test ###########################
+
 line_array_test = []
 new_sentence = True
 beg = True
@@ -79,9 +87,22 @@ for line in test_text:
 				beg = False
 
 		else:
-			#middle/last of sentence, update end of last
-			line_array_test[-1].next(row[1], row[2])
+			#middle/last of sentence
+
+			# update last's next_pos, next_word
+			r_pos, r_word = row[1], row[2]
+			if r_pos not in next_pos_set:
+				r_pos = 'UNKPOS'
+			if r_word not in next_word_set:
+				r_word = 'UNKWORD'
+			line_array_test[-1].next(r_pos, r_word)
+
+			# update last's prev_pos, prev_word
 			prev_pos, prev_wrd = line_array_test[-1].pos, line_array_test[-1].word
+			if prev_pos not in prev_pos_set:
+				prev_pos = 'UNKPOS'
+			if prev_wrd not in prev_word_set:
+				prev_wrd = 'UNKWORD'
 
 		line_array_test.append(Row(label=row[0], pos=row[1], word=row[2], prev_pos=prev_pos, prev_word=prev_wrd))
 
@@ -90,6 +111,7 @@ for line in test_text:
 		new_sentence = True
 line_array_test[-1].next('OMEGAPOS', 'OMEGA')
 
+######################## IDs ################################
 # word ids
 index = len(train_words)+1
 word_dict = dict(zip(train_words, list(range(1, index))))
@@ -110,14 +132,20 @@ def makeIDs(items, last, unkpos=False, unkword=False):
 
 	return idd, end
 
+pseudo_pos = {'OMEGAPOS', 'PHIPOS', 'UNKPOS'}
 # prev_pos ids
-prev_pos_dict, last = makeIDs({row.prev_pos for row in line_array}.union({row.prev_pos for row in line_array_test}), last, unkpos=True)
+prev_pos_dict, last = makeIDs({row.prev_pos for row in line_array}.union(pseudo_pos), last, unkpos=True)
+#prev_pos_test_dict, last = makeIDs({row.prev_pos for row in line_array_test}.union(pseudo_pos), last, unkpos=True)
 # next_pos ids
-next_pos_dict, last = makeIDs({row.next_pos for row in line_array}.union({row.next_pos for row in line_array_test}), last, unkpos=True)
+next_pos_dict, last = makeIDs({row.next_pos for row in line_array}.union(pseudo_pos), last, unkpos=True)
+#next_pos_test_dict, last = makeIDs({row.next_pos for row in line_array_test}.union(pseudo_pos), last, unkpos=True)
+
+pseudo_words = {'OMEGA', 'PHI', 'UNKWORD'}
 # prev_word ids
-prev_word_dict, last = makeIDs({row.prev_word for row in line_array}.union({row.prev_word for row in line_array_test}), last, unkword=True)
+prev_word_dict, last = makeIDs({row.word for row in line_array}.union(pseudo_words), last, unkword=True)
 # next_word ids
-next_word_dict, last = makeIDs({row.next_word for row in line_array}.union({row.next_word for row in line_array_test}), last, unkword=True)
+next_word_dict, last = makeIDs({row.next_word for row in line_array}.union(pseudo_words), last, unkword=True)
+
 
 def toFeat(row, feat_type):
 
@@ -128,10 +156,12 @@ def toFeat(row, feat_type):
 			feats.append(binary_cap_id)
 
 		if feat_type is 'poscon' or feat_type is 'bothcon':
+
 			feats.append(prev_pos_dict[row.prev_pos])
 			feats.append(next_pos_dict[row.next_pos])
 
 		if feat_type is 'lexcon' or feat_type is 'bothcon':
+
 			feats.append(prev_word_dict[row.prev_word])
 			feats.append(next_word_dict[row.next_word])
 

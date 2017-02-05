@@ -8,7 +8,7 @@ def svm_read_problem(data_file_name):
 	"""
 	svm_read_problem(data_file_name) -> [y, x]
 
-	Read LIBSVM-format data from data_file_name and return labels y
+	Read LIBSVM-format data from data_file_name and return LABELS y
 	and data instances x.
 	"""
 	prob_y = []
@@ -172,7 +172,7 @@ def predict(y, x, m, options=""):
 	    -q quiet mode (no outputs)
 
 	The return tuple contains
-	p_labels: a list of predicted labels
+	p_labels: a list of predicted LABELS
 	p_acc: a tuple including  accuracy (for classification), mean-squared
 	       error, and squared correlation coefficient (for regression).
 	p_vals: a list of decision values or probability estimates (if '-b 1'

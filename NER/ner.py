@@ -17,4 +17,4 @@ else:
 		process(sys.argv[1], sys.argv[2], ['word', 'wordcap', 'poscon', 'lexcon', 'bothcon'])
 	else:
 		print('processing ftype ' + str(sys.argv[3]))
-		process(sys.argv[1], sys.argv[2], [sys.argv[3]])
+		process(sys.argv[1], sys.argv[2], [str(sys.argv[3])])

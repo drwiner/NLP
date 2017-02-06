@@ -190,7 +190,7 @@ def setupIDs(train_words, line_array):
 	return
 
 def process(train_file, test_file, ftypes):
-
+	#print('process received +' + str(ftypes))
 	train_text = open(train_file)
 	test_text  = open(test_file)
 
@@ -204,22 +204,24 @@ def process(train_file, test_file, ftypes):
 	setupIDs(train_words, line_array)
 
 	for ftype in ftypes:
+		print('generating features for ' + ftype)
 		generateFeatures(ftype, line_array, line_array_test)
 
 def toFeat(row, feat_type):
 
 	feats = []
 	feats.append(WORD_DICT[row.word])
-	if feat_type is not 'word':
+
+	if str(feat_type) != 'word':
 
 		if row.cap:
 			feats.append(CAP_ID)
 
-		if feat_type is 'poscon' or feat_type is 'bothcon':
+		if str(feat_type) == 'poscon' or str(feat_type) == 'bothcon':
 			feats.append(PREV_POS_DICT[row.prev_pos])
 			feats.append(NEXT_POS_DICT[row.next_pos])
 
-		if feat_type is 'lexcon' or feat_type is 'bothcon':
+		if str(feat_type) == 'lexcon' or str(feat_type) == 'bothcon':
 			feats.append(PREV_WORD_DICT[row.prev_word])
 			feats.append(NEXT_WORD_DICT[row.next_word])
 
@@ -239,7 +241,6 @@ def generateFeatures(ftype, line_array, line_array_test):
 	for line in line_array:
 		train.write(toFeat(line, ftype))
 	train.close()
-
 	for line in line_array_test:
 		test.write(toFeat(line, ftype))
 	test.close()
@@ -253,7 +254,8 @@ if __name__ == '__main__':
 		if str(sys.argv[3]) == 'all':
 			ftypes = words
 		else:
-			ftypes = [sys.argv[3]]
+			ftypes = [str(sys.argv[3])]
+
 		process(sys.argv[1], sys.argv[2], ftypes)
 	else:
 		process('train.txt', 'test.txt', words)
@@ -262,4 +264,5 @@ if __name__ == '__main__':
 # generateFeatures('wordcap')
 # generateFeatures('poscon')
 # generateFeatures('lexcon')
-# generateFeatures('bothcon')
+#generateFeatures('bothcon')
+#process('train.txt', "test.txt", ['bothcon'])

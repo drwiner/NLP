@@ -44,5 +44,7 @@ for line in test_text:
 		path_str = ' '.join(lang)
 		current_path += path_str + ' '
 
+C = Counter([trip.path for trip in TDB])		
+
 C = Counter(TDB) #giving me distinct triples, not distinct paths
 print('check')

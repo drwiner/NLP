@@ -1,0 +1,24 @@
+
+Found 4560 distinct paths, 95 after minfreq filtering.
+Found 6099 path instances, 1161 after minfreq filtering.
+
+MOST SIMILAR RULES FOR: agreed to buy
+1. agreed to buy                  1
+2. agreed to acquire              0.635529307760179
+3. agreed in principle to acquire 0.523145398732042
+4. has agreed in principle to acquire 0.30668088174609
+5. has acquired                   0.259064575296938
+
+MOST SIMILAR RULES FOR: signed
+1. signed                         1
+2. has reached                    0.584516082441066
+3. has signed                     0.476072516488037
+4. reached                        0.383174511384775
+5. completed                      0.179157669143532
+
+MOST SIMILAR RULES FOR: has completed
+1. has completed                  1
+2. completed                      0.325807881884814
+3. closed                         0.153798703469072
+4. approved                       0.143179259197973
+5. expects                        0.137064090939209

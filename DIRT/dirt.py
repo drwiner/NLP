@@ -129,7 +129,9 @@ def loadDatabase():
 	# 	# (t.X for t in filtered_Tinstances)
 	# all_words['Y'] = set()
 	# 	# t.Y for t in filtered_Tinstances)
-	global triple_database, word_freq, all_words
+	global triple_database
+	# word_freq, \
+		# all_words
 
 	# For each filtered triple instance:
 	for x, path, y in filtered_Tinstances:
@@ -149,24 +151,29 @@ def loadDatabase():
 		if x in pdbx.keys():
 			pdbx[x].count += 1
 		else:
-			all_words['X'].add(x)
+			# all_words['X'].add(x)
 			pdbx[x] = Entry(path, 'X', x)
 
 		if y in pdby.keys():
 			pdby[y].count += 1
 		else:
-			all_words['Y'].add(y)
+			# all_words['Y'].add(y)
 			pdby[y] = Entry(path, 'Y', y)
 
-		if x in word_freq['X'].keys():
-			word_freq['X'][x] += 1
-		else:
-			word_freq['X'][x] = 1
 
-		if y in word_freq['Y'].keys():
-			word_freq['Y'][y] += 1
-		else:
-			word_freq['Y'][y] = 1
+	# encountered_paths = set()
+	# for x, path, y in distinct_filtered_Tinstances:
+	# 	# if path not in encountered_paths:
+	# 	if x in word_freq['X'].keys():
+	# 		word_freq['X'][x] += 1
+	# 	else:
+	# 		word_freq['X'][x] = 1
+	#
+	# 	if y in word_freq['Y'].keys():
+	# 		word_freq['Y'][y] += 1
+	# 	else:
+	# 		word_freq['Y'][y] = 1
+		# encountered_paths.add(path)
 
 	# word frequency is the number of times a word fills slot position in all paths
 	# for x, path, y in filtered_Tinstances:
@@ -187,30 +194,42 @@ def MI(path, slot_pos, word):
 
 	# |*, s, *|
 	# number of word elements appearing at slot (must be a path >= minfreq)
-	_s_ = len(all_words[slot_pos])
+	# _s_ = len(all_words[slot_pos])
+	c = 0
+	for p in triple_database.keys():
+		for w in triple_database[p][slot_pos].keys():
+			c += triple_database[p][slot_pos][w].count
+	_s_ = c
+
 	# _s_ = len(unfiltered_words[slot_pos])
 	if _s_ == 0:
 		return 0
 
 	# |p, s, *|
 	# number of distinct word entries in this path's slot
-	ps_ = len(pdb.keys())
+	# ps_ = len(pdb.keys())
+	ps_ = sum(pdb[word].count for word in pdb.keys())
 	if ps_ == 0:
 		return 0
 
 	# |*, s, w|
 	# the number of times the word appears at slot position in all paths
-	_sw = wf[word]
+	# _sw = wf[word]
 	count = 0
 	for p in triple_database.keys():
 		if word in triple_database[p][slot_pos].keys():
 			count += triple_database[p][slot_pos][word].count
+	_sw = count
 	if count != _sw:
-		AssertionError('triple data base count: {} and word_freq {} did not match'.format(count, _sw))
+		raise AssertionError('|*, {}, {}|; triple data base count: {} and word_freq {} did not match'.format(slot_pos, word, count, _sw))
 	if _sw == 0:
 		return 0
 
 	# bmi = (psw * _s_) / (ps_ * _sw)
+	if (psw * _s_) < 0:
+		return 0
+	if (ps_ * _sw) < 0:
+		return 0
 	mi = log2((psw * _s_) / (ps_ * _sw))
 	if mi < 0:
 		return 0

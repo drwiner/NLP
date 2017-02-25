@@ -10,10 +10,14 @@ Triple = namedtuple('Triple', ['X', 'path', 'Y'])
 TStream = []
 
 # distinct_filtered_Tinstances - distinct triples after minfreq
-distinct_filtered_Tinstances = list()
+distinct_filtered_Tinstances = set()
+
+# filtered Tinstances
+filtered_Tinstances = list()
 
 # all_words - all words that appear in X or Y in distinct_filtered_Tinstances
 all_words = dict()
+all_words['X'], all_words['Y'] = set(), set()
 
 # distinct_filtered_Pinstances - the set of paths after minfreq
 distinct_filtered_Pinstances = set()
@@ -23,10 +27,12 @@ distinct_unfiltered_Pinstances = set()
 
 # word_freq - count of times a word appears in slot X or Y for distinct_filtered_Tinstances
 word_freq = dict()
+word_freq['X'], word_freq['Y'] = dict(), dict()
 
 # triple_database - Triple Database - collection of triple instances by path
 triple_database = defaultdict(dict)
 
+unfiltered_words = dict()
 
 def cleanLine(line):
 	return ' '.join(line.split()) + ' '
@@ -78,13 +84,16 @@ def apply_MinfreqFilter(min_freq):
 			distinct_filtered_Tinstances, \
 			distinct_filtered_Pinstances, \
 			filtered_Tinstances, \
-			distinct_unfiltered_Pinstances
+			distinct_unfiltered_Pinstances, unfiltered_words
 
 	PCounter = Counter([t.path for t in TStream])
 	distinct_unfiltered_Pinstances = set(PCounter.keys())
 	distinct_filtered_Pinstances = set(p for p in distinct_unfiltered_Pinstances if PCounter[p] >= min_freq)
 
 	# TCounter = Counter(TStream)
+	# test:
+	unfiltered_words['X'] = set(t.X for t in TStream)
+	unfiltered_words['Y'] = set(t.Y for t in TStream)
 	filtered_Tinstances = [t for t in TStream if PCounter[t.path] >= min_freq]
 	distinct_filtered_Tinstances = set(filtered_Tinstances)
 
@@ -99,7 +108,7 @@ class Entry:
 		self.path = path
 		self.slot = slot
 		self.word = word
-		self.count = 0
+		self.count = 1
 		self.mi = None
 
 	def __hash__(self):
@@ -114,79 +123,98 @@ class Entry:
 			self.path = path
 		self.count += 1
 
-
-def getWordFillers(path, slot_pos):
-	return set(trip._asdict()[slot_pos] for trip in distinct_filtered_Tinstances if trip.path == path)
-
-
 def loadDatabase():
-	# distinct_filtered_Tinstances used for all_words, |*, X, *| and |*, Y, *|
-	all_words['X'] = set(t.X for t in distinct_filtered_Tinstances)
-	all_words['Y'] = set(t.Y for t in distinct_filtered_Tinstances)
+	# all_words, |*, X, *| and |*, Y, *|
+	# all_words['X'] = set()
+	# 	# (t.X for t in filtered_Tinstances)
+	# all_words['Y'] = set()
+	# 	# t.Y for t in filtered_Tinstances)
+	global triple_database, word_freq, all_words
 
-	# Triple database
-
-
-	# step 1 - add entries
-	for path in distinct_filtered_Pinstances:
-
-		## Triple Database by-path
+	# For each filtered triple instance:
+	for x, path, y in filtered_Tinstances:
+		if path is None:
+			print('here')
+		## Triple Database by-path (default dict, so creates dict at key [path] or reference existing)
 		path_db = triple_database[path]
-
-		# database for each path has library of 'entries'
-		path_db['X'] = defaultdict(Entry)
+		if 'X' not in path_db.keys():
+			# database for each path has library of 'entries'
+			path_db['X'] = dict()
 		pdbx = path_db['X']
 
-		path_db['Y'] = defaultdict(Entry)
+		if 'Y' not in path_db.keys():
+			path_db['Y'] = dict()
 		pdby = path_db['Y']
 
-		words_for_path_at_x = getWordFillers(path,'X')
-		words_for_path_at_y = getWordFillers(path,'Y')
+		if x in pdbx.keys():
+			pdbx[x].count += 1
+		else:
+			all_words['X'].add(x)
+			pdbx[x] = Entry(path, 'X', x)
 
-		#for each word in path at x, record count
-		for word in words_for_path_at_x:
-			pdbx[word].update(path, 'X', word)
+		if y in pdby.keys():
+			pdby[y].count += 1
+		else:
+			all_words['Y'].add(y)
+			pdby[y] = Entry(path, 'Y', y)
 
-		for word in words_for_path_at_y:
-			pdby[word].update(path, 'Y', word)
+		if x in word_freq['X'].keys():
+			word_freq['X'][x] += 1
+		else:
+			word_freq['X'][x] = 1
 
-	# count of times a word appears in slot X or Y for distinct_filtered_Tinstances
-	print('scoring word freqs')
-	word_freq_x, word_freq_y = dict(), dict()
-	for word in all_words['X']:
-		word_freq_x[word] = sum(1 for trip in filtered_Tinstances if trip.X == word)
-	for word in all_words['Y']:
-		word_freq_y[word] = sum(1 for trip in filtered_Tinstances if trip.Y == word)
-	word_freq['X'] = word_freq_x
-	word_freq['Y'] = word_freq_y
+		if y in word_freq['Y'].keys():
+			word_freq['Y'][y] += 1
+		else:
+			word_freq['Y'][y] = 1
+
+	# word frequency is the number of times a word fills slot position in all paths
+	# for x, path, y in filtered_Tinstances:
+
 
 # @clock
 def MI(path, slot_pos, word):
+	global word_freq, triple_database, all_words
 
 	wf = word_freq[slot_pos]
 	pdb = triple_database[path][slot_pos]
 
+	# |p,s,w|
 	# the number of times this entry is noted
 	psw = pdb[word].count
 	if psw == 0:
 		return 0
 
+	# |*, s, *|
 	# number of word elements appearing at slot (must be a path >= minfreq)
 	_s_ = len(all_words[slot_pos])
+	# _s_ = len(unfiltered_words[slot_pos])
 	if _s_ == 0:
 		return 0
 
-	# number of unique word entries in this path's slot
+	# |p, s, *|
+	# number of distinct word entries in this path's slot
 	ps_ = len(pdb.keys())
 	if ps_ == 0:
 		return 0
 
-	# the number of times the word appears at slot position
+	# |*, s, w|
+	# the number of times the word appears at slot position in all paths
 	_sw = wf[word]
+	count = 0
+	for p in triple_database.keys():
+		if word in triple_database[p][slot_pos].keys():
+			count += triple_database[p][slot_pos][word].count
+	if count != _sw:
+		AssertionError('triple data base count: {} and word_freq {} did not match'.format(count, _sw))
 	if _sw == 0:
 		return 0
 
-	return log2((psw * _s_) / (ps_ * _sw))
+	# bmi = (psw * _s_) / (ps_ * _sw)
+	mi = log2((psw * _s_) / (ps_ * _sw))
+	if mi < 0:
+		return 0
+	return mi
 
 
 def updateMI():
@@ -204,13 +232,12 @@ def updateMI():
 
 # @clock
 def pathSim(p1, p2):
+	if p1 == 'agreed to buy ' and p2 == 'agreed to acquire ':
+		print('check here')
+
 	slot_x_sim = slotSim(p1, p2, 'X')
-	# print('slot-x sim : ' + str(slot_x_sim))
-	slot_y_sim = slotSim(p1,p2,'Y')
-	# print('slot-y-sim : ' + str(slot_y_sim))
-	# print('pathsim: ' + str(slot_x_sim * slot_y_sim))
-	if slot_x_sim * slot_y_sim < 0:
-		return 0
+	slot_y_sim = slotSim(p1, p2, 'Y')
+
 	return sqrt(slot_x_sim * slot_y_sim)
 
 # @clock
@@ -227,7 +254,6 @@ def slotSim(p1, p2, slot_pos):
 	if n_score == 0:
 		return 0
 
-
 	d_score_1, d_score_2 = 0, 0
 	for word in pd1:
 		d_score_1 += wd1[word].mi
@@ -236,7 +262,6 @@ def slotSim(p1, p2, slot_pos):
 	d_score = d_score_1 + d_score_2
 	if d_score == 0:
 		return 0
-
 
 	return n_score/d_score
 
@@ -269,12 +294,13 @@ updateMI()
 test_text = open('test.txt')
 test_paths = [cleanLine(line) for line in test_text]
 import operator
+
 tp_sim_score_dict = dict()
 for tp in test_paths:
 	# print(tp)
 	path_test = dict()
 	for p in distinct_filtered_Pinstances:
-		ps = pathSim(tp,p)
+		ps = pathSim(tp, p)
 		path_test[p] = ps
 	# now, get the top 5:
 	top_5 = list(reversed(sorted(path_test.items(), key=operator.itemgetter(1))))[0:5]
@@ -282,11 +308,11 @@ for tp in test_paths:
 	tp_sim_score_dict[tp] = top_5
 	output_text.write('\n')
 	output_text.write('MOST SIMILAR RULES FOR: {}\n'.format(tp))
-	output_text.write('1. {}\t\t\t{}\n'.format(top_5[0][0], top_5[0][1]))
-	output_text.write('2. {}\t\t\t{}\n'.format(top_5[1][0], top_5[1][1]))
-	output_text.write('3. {}\t\t\t{}\n'.format(top_5[2][0], top_5[2][1]))
-	output_text.write('4. {}\t\t\t{}\n'.format(top_5[3][0], top_5[3][1]))
-	output_text.write('5. {}\t\t\t{}\n'.format(top_5[4][0], top_5[4][1]))
+	output_text.write('1. %s %24.12f\n' % (top_5[0][0], top_5[0][1]))
+	output_text.write('2. %s %24.12f\n' %  (top_5[1][0], top_5[1][1]))
+	output_text.write('3. %s %24.12f\n' % (top_5[2][0], top_5[2][1]))
+	output_text.write('4. %s %24.12f\n' %  (top_5[3][0], top_5[3][1]))
+	output_text.write('5. %s %24.12f\n' % (top_5[4][0], top_5[4][1]))
 
 # print('look')
 print(tp_sim_score_dict)

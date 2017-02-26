@@ -177,15 +177,15 @@ def MI(path, slot_pos, word):
 
 
 def updateMI():
-	print('scoring MI')
+
 	for path in triple_database.keys():
-		# print(path)
+
 		tdpx = triple_database[path]['X']
 		tdpy = triple_database[path]['Y']
 
-		for word, entry in tdpx.items():
+		for entry in tdpx.values():
 			entry.mi = MI(entry.path, entry.slot, entry.word)
-		for word, entry in tdpy.items():
+		for entry in tdpy.values():
 			entry.mi = MI(entry.path, entry.slot, entry.word)
 
 
@@ -286,5 +286,7 @@ if __name__ == '__main__':
 						break
 				p, score = ranked_list[i]
 				if score > 0:
-					output_text.write(str(i+1) +'. %s %24.12f\n' % (p, score))
+					output_text.write(str(i+1) + '. %s %24.12f\n' % (p, score))
+				else:
+					break
 

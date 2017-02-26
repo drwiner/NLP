@@ -191,9 +191,6 @@ def updateMI():
 
 # @clock
 def pathSim(p1, p2):
-	if p1 == 'agreed to buy ' and p2 == 'agreed to acquire ':
-		print('check here')
-
 	slot_x_sim = slotSim(p1, p2, 'X')
 	slot_y_sim = slotSim(p1, p2, 'Y')
 
@@ -241,9 +238,9 @@ if __name__ == '__main__':
 		corpus_text = open('corpus.txt')
 		test_text = open('test.txt')
 	else:
-		min_freq = sys.argv[-1]
-		corpus_text = open(sys.argv[1])
-		test_text = open(sys.argv[2])
+		min_freq = int(sys.argv[-1])
+		corpus_text = open(str(sys.argv[1]))
+		test_text = open(str(sys.argv[2]))
 
 	#### Load TStream ####
 	readCorpus(corpus_text)

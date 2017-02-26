@@ -1,6 +1,5 @@
 from collections import namedtuple, Counter, defaultdict
 from math import log2, sqrt
-from clockdeco import clock
 
 EXCLUDE = 'is are be was were said have has had and or >comma >squote >rparen >lparen >period >minus >ampersand'.split()
 
@@ -15,24 +14,14 @@ distinct_filtered_Tinstances = set()
 # filtered Tinstances
 filtered_Tinstances = list()
 
-# all_words - all words that appear in X or Y in distinct_filtered_Tinstances
-all_words = dict()
-all_words['X'], all_words['Y'] = set(), set()
-
 # distinct_filtered_Pinstances - the set of paths after minfreq
 distinct_filtered_Pinstances = set()
 
 # distinct_unfiltered_Pinstances
 distinct_unfiltered_Pinstances = set()
 
-# word_freq - count of times a word appears in slot X or Y for distinct_filtered_Tinstances
-word_freq = dict()
-word_freq['X'], word_freq['Y'] = dict(), dict()
-
 # triple_database - Triple Database - collection of triple instances by path
 triple_database = defaultdict(dict)
-
-unfiltered_words = dict()
 
 def cleanLine(line):
 	return ' '.join(line.split()) + ' '
@@ -84,16 +73,13 @@ def apply_MinfreqFilter(min_freq):
 			distinct_filtered_Tinstances, \
 			distinct_filtered_Pinstances, \
 			filtered_Tinstances, \
-			distinct_unfiltered_Pinstances, unfiltered_words
+			distinct_unfiltered_Pinstances
+		# , unfiltered_words
 
 	PCounter = Counter([t.path for t in TStream])
 	distinct_unfiltered_Pinstances = set(PCounter.keys())
 	distinct_filtered_Pinstances = set(p for p in distinct_unfiltered_Pinstances if PCounter[p] >= min_freq)
 
-	# TCounter = Counter(TStream)
-	# test:
-	unfiltered_words['X'] = set(t.X for t in TStream)
-	unfiltered_words['Y'] = set(t.Y for t in TStream)
 	filtered_Tinstances = [t for t in TStream if PCounter[t.path] >= min_freq]
 	distinct_filtered_Tinstances = set(filtered_Tinstances)
 
@@ -124,14 +110,6 @@ class Entry:
 		self.count += 1
 
 def loadDatabase():
-	# all_words, |*, X, *| and |*, Y, *|
-	# all_words['X'] = set()
-	# 	# (t.X for t in filtered_Tinstances)
-	# all_words['Y'] = set()
-	# 	# t.Y for t in filtered_Tinstances)
-	global triple_database
-	# word_freq, \
-		# all_words
 
 	# For each filtered triple instance:
 	for x, path, y in filtered_Tinstances:
@@ -140,92 +118,54 @@ def loadDatabase():
 		## Triple Database by-path (default dict, so creates dict at key [path] or reference existing)
 		path_db = triple_database[path]
 		if 'X' not in path_db.keys():
-			# database for each path has library of 'entries'
 			path_db['X'] = dict()
 		pdbx = path_db['X']
+
+		if x in pdbx.keys():
+			pdbx[x].count += 1
+		else:
+			pdbx[x] = Entry(path, 'X', x)
 
 		if 'Y' not in path_db.keys():
 			path_db['Y'] = dict()
 		pdby = path_db['Y']
 
-		if x in pdbx.keys():
-			pdbx[x].count += 1
-		else:
-			# all_words['X'].add(x)
-			pdbx[x] = Entry(path, 'X', x)
-
 		if y in pdby.keys():
 			pdby[y].count += 1
 		else:
-			# all_words['Y'].add(y)
 			pdby[y] = Entry(path, 'Y', y)
-
-
-	# encountered_paths = set()
-	# for x, path, y in distinct_filtered_Tinstances:
-	# 	# if path not in encountered_paths:
-	# 	if x in word_freq['X'].keys():
-	# 		word_freq['X'][x] += 1
-	# 	else:
-	# 		word_freq['X'][x] = 1
-	#
-	# 	if y in word_freq['Y'].keys():
-	# 		word_freq['Y'][y] += 1
-	# 	else:
-	# 		word_freq['Y'][y] = 1
-		# encountered_paths.add(path)
-
-	# word frequency is the number of times a word fills slot position in all paths
-	# for x, path, y in filtered_Tinstances:
-
 
 # @clock
 def MI(path, slot_pos, word):
-	global word_freq, triple_database, all_words
 
-	wf = word_freq[slot_pos]
 	pdb = triple_database[path][slot_pos]
 
 	# |p,s,w|
-	# the number of times this entry is noted
 	psw = pdb[word].count
 	if psw == 0:
 		return 0
 
 	# |*, s, *|
-	# number of word elements appearing at slot (must be a path >= minfreq)
-	# _s_ = len(all_words[slot_pos])
-	c = 0
+	_s_ = 0
 	for p in triple_database.keys():
 		for w in triple_database[p][slot_pos].keys():
-			c += triple_database[p][slot_pos][w].count
-	_s_ = c
-
-	# _s_ = len(unfiltered_words[slot_pos])
+			_s_ += triple_database[p][slot_pos][w].count
 	if _s_ == 0:
 		return 0
 
 	# |p, s, *|
-	# number of distinct word entries in this path's slot
-	# ps_ = len(pdb.keys())
 	ps_ = sum(pdb[word].count for word in pdb.keys())
 	if ps_ == 0:
 		return 0
 
 	# |*, s, w|
-	# the number of times the word appears at slot position in all paths
-	# _sw = wf[word]
-	count = 0
+	_sw = 0
 	for p in triple_database.keys():
 		if word in triple_database[p][slot_pos].keys():
-			count += triple_database[p][slot_pos][word].count
-	_sw = count
-	if count != _sw:
-		raise AssertionError('|*, {}, {}|; triple data base count: {} and word_freq {} did not match'.format(slot_pos, word, count, _sw))
+			_sw += triple_database[p][slot_pos][word].count
 	if _sw == 0:
 		return 0
 
-	# bmi = (psw * _s_) / (ps_ * _sw)
 	if (psw * _s_) < 0:
 		return 0
 	if (ps_ * _sw) < 0:
@@ -286,53 +226,68 @@ def slotSim(p1, p2, slot_pos):
 
 
 import sys
-for arg in sys.argv:
-	print(arg, end=' ')
-print('\n')
-# if __name__ == '__main__':
 
-corpus_text = open('corpus.txt')
-output_text = open('output.txt', 'w')
+if __name__ == '__main__':
+	for arg in sys.argv:
+		print(arg, end=' ')
+	print('\n')
 
-#### Load TStream ####
-readCorpus(corpus_text)
+	if len(sys.argv) != 4 and len(sys.argv) > 1:
+		print('must have 3 args')
+		raise AssertionError
+	elif len(sys.argv) == 1:
+		# for testing
+		min_freq = 5
+		corpus_text = open('corpus.txt')
+		test_text = open('test.txt')
+	else:
+		min_freq = sys.argv[-1]
+		corpus_text = open(sys.argv[1])
+		test_text = open(sys.argv[2])
 
-#### Apply MinFreq####
-dp, dmf, pi, pimf = apply_MinfreqFilter(5)
+	#### Load TStream ####
+	readCorpus(corpus_text)
 
-output_text.write('Found {} distinct paths, {} after minfreq filtering.\n'.format(dp, dmf))
-output_text.write('Found {} path instances, {} after minfreq filtering.\n'.format(pi, pimf))
+	#### Apply MinFreq####
+	dp, dmf, pi, pimf = apply_MinfreqFilter(min_freq)
 
-#### Load Triple Databse (as in paper)
-loadDatabase()
-# update Mutual Information once all data is loaded
-updateMI()
+	output_text = open('output.txt', 'w')
+	output_text.write('Found {} distinct paths, {} after minfreq filtering.\n'.format(dp, dmf))
+	output_text.write('Found {} path instances, {} after minfreq filtering.\n'.format(pi, pimf))
 
+	#### Load Triple Databse (as in paper)
+	loadDatabase()
+	# update Mutual Information once all data is loaded
+	updateMI()
 
-### read in comparison tests
-test_text = open('test.txt')
-test_paths = [cleanLine(line) for line in test_text]
-import operator
+	### read in comparison tests
+	test_paths = [cleanLine(line) for line in test_text]
+	import operator
 
-tp_sim_score_dict = dict()
-for tp in test_paths:
-	# print(tp)
-	path_test = dict()
-	for p in distinct_filtered_Pinstances:
-		ps = pathSim(tp, p)
-		path_test[p] = ps
-	# now, get the top 5:
-	top_5 = list(reversed(sorted(path_test.items(), key=operator.itemgetter(1))))[0:5]
+	# tp_sim_score_dict = dict()
+	for tp in test_paths:
+		if tp == ' ' or tp == '\n':
+			continue
+		path_test = dict()
+		for p in distinct_filtered_Pinstances:
+			if tp not in triple_database.keys():
+				continue
+			ps = pathSim(tp, p)
+			path_test[p] = ps
 
-	tp_sim_score_dict[tp] = top_5
-	output_text.write('\n')
-	output_text.write('MOST SIMILAR RULES FOR: {}\n'.format(tp))
-	output_text.write('1. %s %24.12f\n' % (top_5[0][0], top_5[0][1]))
-	output_text.write('2. %s %24.12f\n' %  (top_5[1][0], top_5[1][1]))
-	output_text.write('3. %s %24.12f\n' % (top_5[2][0], top_5[2][1]))
-	output_text.write('4. %s %24.12f\n' %  (top_5[3][0], top_5[3][1]))
-	output_text.write('5. %s %24.12f\n' % (top_5[4][0], top_5[4][1]))
-
-# print('look')
-print(tp_sim_score_dict)
+		# now, get the top 5:
+		ranked_list = list(reversed(sorted(path_test.items(), key=operator.itemgetter(1))))
+		# tp_sim_score_dict[tp] = top_5
+		output_text.write('\n')
+		output_text.write('MOST SIMILAR RULES FOR: {}\n'.format(tp))
+		if tp not in triple_database.keys():
+			output_text.write('This phrase is not in the triple database.\n')
+		else:
+			for i in range(len(ranked_list)):
+				if i > 4:
+					if ranked_list[i] != ranked_list[-1]:
+						break
+				p, score = ranked_list[i]
+				if score > 0:
+					output_text.write(str(i+1) +'. %s %24.12f\n' % (p, score))
 

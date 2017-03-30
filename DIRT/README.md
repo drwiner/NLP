@@ -1,11 +1,7 @@
+// David Winer
+// 2017 - 02 - 25
 
-//Instructions 
-
-// install corenlp python wrapper in virtual environment
-python3 -m virtualenv ve
-source ve/bin/activate.csh
-pip install pycorenlp
-
-// starts server
-java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer
-
+//Instructions for DIRT assignment
+// "unzip DIRT.zip"
+// "chmod +x dirt.py"
+// "python3 dirt.py <corpus.txt> <text.txt> <min_freq>"

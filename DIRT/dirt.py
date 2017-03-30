@@ -1,3 +1,7 @@
+# the DIRT algorithm (Lin and Pantel, 2001, ACM)
+# Written by DAVID WINER
+# Do not take without permission - drwiner@cs.utah.edu
+
 from collections import namedtuple, Counter, defaultdict
 from math import log2, sqrt
 

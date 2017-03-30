@@ -1,0 +1,15 @@
+pistol
+rifle
+gun
+guns
+weapon
+rifles
+shotgun
+revolver
+weapons
+knife
+sword
+arrows
+turret
+fires
+razor

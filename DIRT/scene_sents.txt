@@ -1,0 +1,1357 @@
+5cs	Jonathan Rudd (Robert Mitchum) drives a carriage along the road	0
+5cs	Van Morgan (Dean Martin) leans against a tree, notices Rudd coming toward him, holsters gun, walks toward Rudd	1
+5cs	Rudd comes down road, stops carriage next to Morgan	2
+5cs	Morgan speaks to Rudd	3
+5cs	Rudd replies to Morgan, dismounts carriage, drops Bible, retrieves Bible	4
+5cs	Bible is shown close up, upside down, Rudd brushes off bible	5
+5cs	Rudd speaks to Morgan	6
+5cs	Rudd continues speaking to Morgan	7
+5cs	Morgan speaks to Rudd	8
+5cs	Rudd replies to Morgan	9
+5cs	Morgan replies to Rudd	10
+5cs	Rudd replies to Morgan	11
+5cs	Morgan replies to Rudd	12
+5cs	Rudd replies to Morgan	13
+5cs	Morgan replies to Rudd	14
+5cs	Rudd replies to Morgan, Morgan replies to Rudd, Rudd replies to Morgan	15
+5cs	Morgan replies to Rudd	16
+5cs	Rudd replies to Morgan	17
+5cs	Morgan replies to Rudd	18
+5cs	Rudd replies to Morgan, points at Morgan	19
+5cs	Morgan replies to Rudd	20
+5cs	Rudd replies to Morgan	21
+5cs	Morgan replies to Rudd	22
+5cs	Rudd stares at Morgan, Morgan continues speaking	23
+5cs	Morgan continues speaking	24
+5cs	Rudd stares at Morgan, Morgan continues speaking	25
+5cs	Morgan continues speaking	26
+5cs	Rudd replies to Morgan, opens Bible	27
+5cs	Rudd continues speaking, turns page to reveal hidden gun	28
+5cs	Morgan replies to Rudd	29
+5cs	Rudd looks at Morgan, Morgan speaks to Rudd	30
+5cs	Morgan continues speaking	31
+5cs	Rudd stares at Morgan	32
+5cs	Morgan stares at Rudd	33
+5cs	Rudd drops Bible, reaches for gun	34
+5cs	Morgan draws gun, fires gun, turns away, falls, Rudd draws gun, fires gun, turns away, falls	35
+5cs	Morgan hits the ground, turns over, aims gun, rises to knee, stands up, walks to Rudd's body	36
+5cs	Morgan finishes walking to Rudd's body, looks down at body, lowers to knee, reaches for Bible	37
+5cs	Morgan moves Bible from under Rudd's foot, picks up hidden gun, puts gun in Bible, closes Bible, picks Bible up	38
+ffd	Joe (Clint Eastwood) walks toward the mansion	0
+ffd	Joe stops at Coffinmaker, coffinmakersands coffin, hums, Joe turns toward cofffinmaker, speaks to coffinmaker, continues walking	1
+ffd	Thugs move in front of fence, watch Joe	2
+ffd	Man watches Joe pass from inside bar	3
+ffd	Man on balcony watches Joe	4
+ffd	Thugs continue moving toward duel position	5
+ffd	Joe finishes walking toward thugs, thugs walk toward Joe, thug A speaks to Joe	6
+ffd	Thug A continues speaking to Joe	7
+ffd	Joe watches thugs, thug A continues speaking to Joe, Joe replies to thug A	8
+ffd	Thug A replies to Joe	9
+ffd	Joe replies to thug A	10
+ffd	Thug B watches Joe	11
+ffd	Thug A watches Joe	12
+ffd	Thug B speaks to Joe	13
+ffd	Joe replies to thugs	14
+ffd	Thugs laugh	15
+ffd	Thugs continue to laugh	16
+ffd	Joe move poncho to reveal gun, thugs continue laughing	17
+ffd	Thugs continue laughing, thug A stops smiling	18
+ffd	Joe looks up at thugs, speaks to thugs	19
+ffd	Thugs stop laughing	20
+ffd	Thug B stops smiling	21
+ffd	Joe continues to speak to thugs	22
+ffd	Thug B watches Joe, Joe continues to speak to thugs	23
+ffd	Thug B puts hand on gun, Joe continues speaking to thugs	24
+ffd	Thugs watch Joe, Joe continues speaking to thugs	25
+ffd	Coffinmaker watches all	26
+ffd	Man watches all	27
+ffd	Joe watches thugs, thug A continues speaking to Joe, Joe replies to thug A	28
+ffd	Thugs watch Joe, thug A spits	29
+ffd	Joe watches thugs	30
+ffd	Thugs start to draw guns	31
+ffd	Joe draws gun	32
+ffd	Joe glares at thugs	33
+ffd	Joe fires gun consecutively, holsters gun	34
+ffd	Coffinmaker nods in approval	35
+ffd	John Baxter (Wolfgang Lukschy) and Antonio Baxter (Bruno Carotenuto) exit mansion	36
+ffd	Joe looks at John, John speaks to Joe	37
+ffd	John continues to talk to Joe	38
+ffd	Joe draws gun, aims gun at John, speaks to John	39
+ffd	John replies to Joe, searches pockets, takes out sherif's badge	40
+ffd	Joe replies to John, pulls poncho back to previous positon, turns around, walks away	41
+ffd	John looks at corpses of thugs	42
+dis	Sam Pierce (Charles Bickford) puts gun on bar, speaks to Zeke (Robert McKenzie), slides gun down to Zeke, takes box out of shirt pocket, Zeke replies, walks to Sam while mixing soda, sets glass on bar, Sam replies to Zeke, shows Zeke ring, Zeke looks ring, replies to Sam, Sam replies to Zeke, speaks to bar patrons, raises soda, Lewton McHandles (Gregory Peck) speaks to Sam, enters bar	0
+dis	McHandles continues speaking to Sam, puts cigarette in mouth	1
+dis	Sam replies, McHandles replies, Sam replies	2
+dis	McHandles speaks to Sam	3
+dis	Sam replies to McHandles	4
+dis	Sam continues to reply to McHandles, McHandles replies to Sam	5
+dis	McHandles continues to to reply to Sam	6
+dis	Sam turns toward Mchandles	7
+dis	Sam reaches for gun, touches empty holster	8
+dis	Sam replies to McHandles	9
+dis	McHandles replies to Sam, moves away from bar, Sam walks toward McHandles, Zeke slides Sam his gun, Sam reaches for gun	10
+dis	Sam grabs gun	11
+dis	McHandles draws gun, Sam aims gun at Mchandles, McHandles fires three times, Sam falls dead	12
+dis	Sam lets go of ring	13
+dis	McHandles speaks to bar patrons, throws gun up, catches gun, holsters gun, walks toward entrance	14
+pr	Thug walks through barn, rope is thrown around thug's neck	0
+pr	Thug grabs neck, fires gun, falls	1
+pr	Rope is tied to horse, horse runs out of barm, thug is dragged with horse	2
+pr	Horse and thug go toward Stockburn (John Russell)	3
+pr	Horse and thug go past Stockburn, Stockburn turns to watch them go	4
+pr	The Preacher (Clint Eastwood) steps toward hat, bends down, picks hat up	5
+pr	Stockburn watches thug and horse, turns head to the Preacher brushes off hat	6
+pr	Stockburn finishes turning head to the Preacher, looks at The Preacher	7
+pr	The Preacher puts hat on	8
+pr	Stockburn turns body toward the Preacher	9
+pr	The Preacher adjusts hat, watches Stockburn, turns body toward Stockburn	10
+pr	Stockburn removes hands from pockets, moves coat to reveal gun	11
+pr	The Preacher walks toward Stockburn	12
+pr	Stockburn watches the Preacher	13
+pr	The Preacher continues waking toward Stockburn	14
+pr	The Preacher continues waking toward Stockburn	15
+pr	The Preacher opens gun chamber, reaches for bullet on belt	16
+pr	Stockburn watches the Preacher	17
+pr	The Preacher puts bullet in gun, continues walking toward Stockburn	18
+pr	The Preacher watches Stockburn	19
+pr	The Preacher continues loading gun, contiues walking toward Stockburn, woman exits house, runs off screen	20
+pr	Stockburn watches the Preacher	21
+pr	Coy LaHood (Richard Dystart) watches the Preacher from inside building	22
+pr	The Preacher continues waking toward Stockburn	23
+pr	The Preacher nears Stockburn, Stockburn watches the Preacher	24
+pr	The Preacher puts gun in holster, continues walking	25
+pr	Stockburn continues watching, the Preacher continues walking	26
+pr	The Preacher stops walking	27
+pr	Stockburns watches the Preacher	28
+pr	The Preacher watches Stockburn	29
+pr	Stockburn speaks to the Preacher	30
+pr	The Preacher watches Stockburn	31
+pr	Stockburn attempts to draw gun	32
+pr	The Preacher draws gun	33
+pr	Stockburn pauses	34
+pr	The Preacher aims gun at Stockburn	35
+pr	Stockburn speaks to the Preacher	36
+pr	The Preacher watches Stockburn	37
+pr	Stockburn attempts to draw gun	38
+pr	The Preacher fires gun	39
+pr	The Preacher continues to fire gun	40
+pr	The Preacher continues to fire gun	41
+pr	Stockburn flinches, the Preacher continues to fire gun	42
+pr	The Preacher finishes firing his gun, Stockburn sinks to his knees.	43
+pr	Stockburn bends over, loses hat	44
+pr	The Preacher draws a second gun	45
+pr	Stockburn draws gun	46
+pr	The Preacher watches Stockburn	47
+pr	Stockburn looks up at the Preacher	48
+pr	The Preacher aims gun at Stockburn	49
+pr	The Preacher fires gun, Stockburn falls forward, dies	50
+pr	The preacher watches Stockburn's corpse	51
+pr	LaHood walks to window with rifle, aims at the Preacher	52
+pr	Hull Baret (Michael Moriarty) kicks in door	53
+pr	LaHood turns to look at Baret	54
+pr	Baret steps toward LaHood, aims rifle	55
+pr	LaHood aims rifle	56
+pr	Baret fires rifle	57
+pr	LaHood falls backward	58
+pr	The Preacher looks toward building	59
+pr	LaHood falls backward, breaks window	60
+pr	LaHood continues breaking window, dies	61
+pr	The Preacher watches LaHood's corpse	62
+pr	Baret lowers rifle, walks out of building	63
+pr	Baret walks down stairs	64
+pr	Baret walks into street	65
+pr	Baret continues walking into street	66
+pr	The Preacher rides out of barn on horse	67
+pr	The Preacher stops, turns horse toward Baret	68
+pr	The Preacher watches Baret	69
+pr	Baret watches the Preacher	70
+pr	The Preacher watches Baret	71
+pr	Baret looks down at Stockburn's corpse	72
+pr	Stockburns corpse lays still	73
+pr	Baret looks back at the Preacher	74
+pr	The Preacher speaks to Baret	75
+pr	Baret replies to the Preacher	76
+pr	The Preacher nods, rides off out of town	77
+agf	Abe Cross (Johnny Cash) and Will Tenneray (Kirk Douglas) stand together and smile for a picture	0
+agf	The photographer takes the picture, the young gunfighter (Keith Carradine) walks up to the front of the bar structure and speaks to the crowd	1
+agf	The crowd looks at the man, a citizen replies to the gunfighter and points out Abe and Will	2
+agf	The young gunfighter speaks to Abe and Will, tips hat	3
+agf	Abe and Will nod in acknowledgement	4
+agf	The young gunfighter speaks to Abe and Will	5
+agf	Will looks at the young gunfighter	6
+agf	Nora Tenneray (Jane Alexander)  and Bud Tenneray (Eric Douglas) enter the area	7
+agf	Abe looks at the young gunfighter	8
+agf	The young gunfighter speaks to Abe and Will	9
+agf	The crowd move away from the area	10
+agf	Marshal Tom Cater (Robert J. Wilke) walks toward the scene	11
+agf	The crowd continues clearing out	12
+agf	The crowd continues clearing out	13
+agf	Nora and Bud watch the men	14
+agf	Abe and Will watch the young gunfighter	15
+agf	The Reporter speaks to the photographer, photograhper sets up camera, the reporter speaks to the crowd	16
+agf	Tom watches the men	17
+agf	Abe and Will and the young gunfighter stare at eachother	18
+agf	Abe speaks to the young gunfighter	19
+agf	The young gunfighter looks at Abe	20
+agf	Abe continues speaking	21
+agf	The young gunfighter replies	22
+agf	Will replies to the young gunfighter	23
+agf	The young gunfighter replies to Will	24
+agf	Tom speaks to all three	25
+agf	Abe and Will look at Tom	26
+agf	Tom turns, speaks to the young gunfighter	27
+agf	The young gunfighter replies to Tom	28
+agf	Tom watches the young gunfighter	29
+agf	Abe and Will watch the young gunfighter	30
+agf	The young gunfighter speaks to Tom	31
+agf	Tom replies to the young gunfighter	32
+agf	The young gunfighter watches Tom	33
+agf	Will speaks to Tom, Tom turns to Will, walks toward Will, replies to Will, points toward young gunfighter	34
+agf	Tom continues reply to Will	35
+agf	Tom turns to young gunfighter, speaks to young gunfighter	36
+agf	The young gunfighter watches Tom	37
+agf	Tom speaks to the young gunfighter,walks toward young gunfighter, the young gunfighter replies to Tom	38
+agf	Young gunfighter continues to reply to Tom	39
+agf	Tom replies to the young gunfighter, walks toward young gunfighter, the young gunfighter draws gun, fires	40
+agf	Tom jersk back, falls backward, Abe and Will run down from porch	41
+agf	Bar owner runs out of bar	42
+agf	Nora looks at Bud, looks back at men	43
+agf	Crowd moves forward	44
+agf	Abe Will and citizen help Tom up off the ground, Abe and two other citizens help him walk, Tom speaks to crowd, Will looks at young gunfighter	45
+agf	Young gunfighter watches Will	46
+agf	Will watches the young gunfighter	47
+agf	Young gunfighter watches Will	48
+agf	Citizen speaks to other citizens, pulls them away	49
+agf	Will watches the young gunfighter	50
+agf	The young gunfighter speaks to Will	51
+agf	Will watches the young gunfighter	52
+agf	Abe helps Tom walk, lets go of Tom, turns back, walks toward scene	53
+agf	Young gunfighter holsters gun	54
+agf	Will watches the young gunfighter	55
+agf	The young gunfighter continues speaking	56
+agf	Will replies to the young gunfighter	57
+agf	Young gunfighter watches Will	58
+agf	Nora and Bud watch the men	59
+agf	Abe looks at Will	60
+agf	Will watches the young gunfighter	61
+agf	The young gunfighter draws his gun	62
+agf	Will draws his gun, fires	63
+agf	The young gunfighter falls backward, dead	64
+agf	Will watches the young gunfighter	65
+agf	Nora and Bud turn around to look at Will	66
+agf	The young gunfighter lies on the ground	67
+agf	Will looks at Abe	68
+agf	Abe looks away from Will	69
+agf	Will looks at young gunfighter, toses gun up	70
+agf	The young gunfighter lies on the ground	71
+agf	Abe looks at Will	72
+agf	Will holsters gun, citizens walk to Will, shake Will's hand, Will leaves to duel scene	73
+agf	Abe turns around, walks away	74
+hmh	Jed Cooper (Clint Eastwood) crosses street, lights cigaratte, and notices horse	0
+hmh	Horse stands idly	1
+hmh	Jed walks to horse	2
+hmh	Jed's name is shown on saddle	3
+hmh	Jed walks to bar entrance	4
+hmh	Jed enters bar and approaches Reno (Joseph Sirola), initiates dialog	5
+hmh	Reno responds to Jed	6
+hmh	Jed replies to Reno	7
+hmh	Reno responds to Jed and pours himself a drink	8
+hmh	Reno and Jed continue conversing, Reno sets bottle down	9
+hmh	Jed put cigar in Reno's drink	10
+hmh	Jed retracts his hand and Reno begins turning to him	11
+hmh	Reno finishes turning to Jed and asks what he's done	12
+hmh	Jed leans toward him and asks if he remembers him	13
+hmh	Reno replies	14
+hmh	Jed pulls down scarf and reveals scar	15
+hmh	Reno stares	16
+hmh	Scar is shown close up along with Jed's face	17
+hmh	Reno continues to stare	18
+hmh	Reno backs away from Jed	19
+hmh	Jed watches Reno	20
+hmh	Reno continues to back away toward barrels, Jed speaks	21
+hmh	Showing Jed's face, Jed continues to speak	22
+hmh	Duel begins with Jed in foreground and Reno in background	23
+hmh	Reno draws pistol	24
+hmh	Jed shoots Reno	25
+hmh	Close up of Reno's face as he is shot	26
+hmh	Jed pulls back the hammer of his gun repeatedly	27
+hmh	Reno falls against barrels	28
+hmh	Reno falls and dies	29
+hmh	Jed walks from bar to Reno	30
+hmh	Jed continues to walk from bar to Reno, Jed holsters his gun	31
+mslv	Ranse (Stewart) approaches Liberty (Marvin) out in the street	0
+mslv	Liberty begins provoking Ranse	1
+mslv	Ranse continues approaching Liberty	2
+mslv	Liberty commands Ranse emerge from the shadows	3
+mslv	Ranse walks into a lit area.	4
+mslv	Liberty draws his gun & fires	5
+mslv	The bullet strikes the hanging pot next to Ranse, jarring him	6
+mslv	Liberty laughs at Ranse	7
+mslv	Ranse stands his ground	8
+mslv	Liberty stares down Ranse	9
+mslv	Liberty fires another round	10
+mslv	Liberty fires another round	11
+mslv	The bullet strikes Ranse's arm, causing him to drop his gun	12
+mslv	Liberty continues laughing at Ranse	13
+mslv	Ranse begins to approach his fallen pistol	14
+mslv	Liberty looks at Ranse	15
+mslv	Ranse slowly approaches his gun, while Liberty provokes him	16
+mslv	Liberty shoots the ground near Ranse's gun	17
+mslv	Ranse successfully picks up his gun and resumes approaching Liberty	18
+mslv	Liberty announces his next shot will kill Ranse	19
+mslv	Both men fire, and Liberty falls to the street & dies. The crowd swarms Liberty's body.	20
+mslv	Ranse walks away from the scene while clutching his bloody arm.	21
+hn2	J.D. Ward (Pernell Roberts) walks with henchmen to Alonzo (J.A. Preston), speaks to Alonzo, holds out arm, looks away	0
+hn2	Alonzo drops reigns, walks to rifle case on horse, opens rifle case, pulls out rifle	1
+hn2	Will Kane (Lee Majors) exits building, walks to edge of porch	2
+hn2	Alonzo looks at Will, speaks to Ward	3
+hn2	Alonzo conitnues speaking to Ward, takes rifle by the barrel, throws rifle	4
+hn2	Rifle lands on ground	5
+hn2	Ward looks at Alonzo, speaks to Alonzo	6
+hn2	Alonzo replies to Ward, points to Will	7
+hn2	Ward looks at Will	8
+hn2	Wil watches Ward, steps off porch, walks out into street	9
+hn2	Ward looks at rifle	10
+hn2	Rifle is still on the ground	11
+hn2	Ward walks toward rifle, looks at Will, speaks to Will	12
+hn2	Will replies to Ward	13
+hn2	Ward continues walking toward rifle, glances right	14
+hn2	Will continues replying to Ward	15
+hn2	Ward finishes walking toward rifle, replies to Will	16
+hn2	Will watches Ward	17
+hn2	Onlookers watch both men	18
+hn2	Onlookers watch both men	19
+hn2	Henchmen and Alonzo watch both men	20
+hn2	Ward holds out hand, speaks to Will	21
+hn2	Will reaches into coat	22
+hn2	Ward draws gun	23
+hn2	Kane draw gun from coat, fires gun	24
+hn2	Ward fires gun, gets hit by bullet, bends over	25
+hn2	Ward drops gun, falls to knees, crawls to rifle, grabs rifle, stands up, pulls hammer on rifle back, turns toward Will, Will fires gun, Ward drops rifle, falls over, dies	26
+hn2	Will watches Ward's body, Amy Kane (Katherine Cannon) exits building, Will holsters gun	27
+hn2	Ward lies dead on ground	28
+hn2	Alonzo leans against pole, turns head away	29
+hn2	Will puts arm around Amy, holds Amy	30
+hn2	Will continues holding Amy	31
+yg	John Simpson Chisum (James Coburn) stands on porch, hands cloth to guard, walks down stairs	0
+yg	Billy the Kid's gang rides toward Chisum, narrator speaks	1
+yg	Narrator finishes speaking, Chisum finishes walking, speaks to Billy the Kid (Emilio Estevez)	2
+yg	Chisum continues speaking, gang stops in front of Chisum	3
+yg	Chisum finishes speaking	4
+yg	Billy replies to Chisum	5
+yg	Jose Chavez y Chavez (Lou Diamond Phillips) watches Chisum, Billy continues speaking	6
+yg	Billy unfolds paper, continues speaking	7
+yg	Billy finishes speaking, Chisum watches Billy, looks away, looks back at Billy, smiles at Billy, replies to Billy	8
+yg	Billy replies to Chisum	9
+yg	Chisum replies to Billy, steps toward Billy	10
+yg	Billy watches Chisum	11
+yg	Chisum continues speaking, thugs appear in background	12
+yg	Arkansas Dave Rudabaugh (Christian Slater) replies to Chisum, looks back, looks back at Chisum	13
+yg	Chisum watches the gang Josiah Gordon 'Doc' Scurlock speaks to Chisum	14
+yg	Doc continues speaking	15
+yg	Doc continues speaking, Chisum watches the gang	16
+yg	Doc finishes speaking	17
+yg	Chisum replies to Doc, speaks to gang	18
+yg	Hendry William French (Alan Ruck) replies to Chisum	19
+yg	Chisum watches Hendry	20
+yg	Hendry speaks to Chisum, points at Chisum	21
+yg	Thugs approach Chisum and the gang, Hendry continues speaking	22
+yg	Hendry finishes replying	23
+yg	Thug A speaks to Chisum, Chisum turns around	24
+yg	Chisum replies to Thug A, walks toward Thug A, turns back to gang, turns back to Thug A, Billy speaks to Thugs	25
+yg	Billy draws gun, aims gun at Thug A, speaks to Thug A	26
+yg	Thug A watches Billy, Billy speaks to Chisum	27
+yg	Dave pulls out shot gun, Billy continues speaking	28
+yg	Chisum replies to Billy	29
+yg	Thug B replies to Billy	30
+yg	Thug A turns head to Thug B, Billy speaks to Thug A, Thug A looks at Billy	31
+yg	Billy continues speaking, Chisum speaks to Billy	32
+yg	Thug A unbuckles belt, Billy speaks to Thug A, thug A drops belt on the ground, Billy speaks to Thug A	33
+yg	Billy holsters gun, dismounts horse, throws reigns over horse, walks to duel position, speaks to Chisum	34
+yg	Chisum watches Billy, turns head to Thug B, Billy continues speaking	35
+yg	Thug B watches Billy, Billy continues speaking	36
+yg	Thug B's hand moves up holster toward gun, Billy continues speaking	37
+yg	Billy continues speaking, takes off belt, walks forward, drops belt on ground, walks back, finishes speaking	38
+yg	Thug B watches Billy	39
+yg	Billy speaks to Thug B, spits into hands, rubs hands together	40
+yg	Thug B flips leather guard off gun hammer	41
+yg	Billy speaks to Thug B	42
+yg	Thug B replies to Billy	43
+yg	Billy speaks to Dave	44
+yg	Dave fires shotgun	45
+yg	Thug B falls back, dies	46
+yg	Gang's horses move about, Chisum looks at Thug B, Billy crosses arms	47
+yg	Chisum speaks to himself	48
+yg	Billy speaks to Chisum	49
+yg	Thug A watches Billy	50
+yg	Dave looks at Thug A	51
+yg	Thug A runs toward gun	52
+yg	Billy speaks to Hendry	53
+yg	Hendry tries to pull put rifle, rifle gets stuck	54
+yg	Thug A pulls leather guard off pistol, Hendry exclaims	55
+yg	Billy glances at Hendry, looks back at Thug A	56
+yg	Hendry tries to draw pistol	57
+yg	Dave shakes head, Billy speaks to Hendry	58
+yg	Thug A pulls out pistol	59
+yg	Billy watches Thug A	60
+yg	Thug A looks up at Billy, aims pistol at Billy	61
+yg	Rifle fires	62
+yg	Rifle fires (barrel shown)	63
+yg	Thug A is hit	64
+yg	Thug A falls back, dies, camera pans, Doc is shown aiming rifle	65
+yg	Billy looks at Doc	66
+yg	Doc looks at Billy, then at Chisum	67
+yg	Chisum watches Doc, Billy speaks to Chisum, Chisum speaks to Billy	68
+yg	Doc throws rifle on ground, turns horse	69
+yg	Doc rides away	70
+bc	Rufus Hannassey (Burl Ives) loads two guns for a duel, James Mckay (Gregory Peck) and Buck Hannassey (Chuck Connors) stare eachother down. Rufus walks toward Buck and James, speaks to crowd, speaks to Buck and James, holds both guns out the James, James speaks to Buck, Buck takes a gun, Rufus gives gun to James, speaks to James and Buck, puts a hand of both and turns them back to back.  Buck fiddles with gun, Rufus speaks to Buck, turns around, speaks to crowd, walks back to wagon, Buck speaks to James, Rufus speaks to James and Buck	0
+bc	Rufus continues to speak to James and Buck, Jean Simmons (Julie Maragon) watches both men, closes her eyes	1
+bc	Rufus continues to speak to James and Buck, both men walk forward ten paces	2
+bc	Jean opens her eyes again and watches both men	3
+bc	Rufus speaks to James and Buck, both turn around, pull back hammers	4
+bc	Buck stands and watches James	5
+bc	James watches Buck	6
+bc	Rufus speaks to James and Buck, Jean watches both men	7
+bc	Buck aims his gun	8
+bc	James aims his gun	9
+bc	Rufus looks at James, then at Buck	10
+bc	Buck fires	11
+bc	James jerks back	12
+bc	Rufus looks at Buck, moves in his seat	13
+bc	Jean continues watching	14
+bc	James recovers, touches wound on head	15
+bc	Jean sighs	16
+bc	Rufus speaks to Buck, James looks at Buck, speaks to Rufus, Rufus looks at James	17
+bc	James speaks to Rufus	18
+bc	Buck tries to shoot James, looks at gun, looks at James	19
+bc	Rufus looks at James, speaks to James	20
+bc	James watches Buck	21
+bc	Buck watches James	22
+bc	James watches Buck	23
+bc	James aims his gun	24
+bc	James continues aiming his gun	25
+bc	Buck looks at Rufus	26
+bc	Rufus looks at Buck	27
+bc	Buck looks at James	28
+bc	James continues aiming his gun	29
+bc	James opens his left eye	30
+bc	Buck watches James, shows vsible fear	31
+bc	Buck crouches down and cowers	32
+bc	Rufus watches Buck	33
+bc	Buck stands up and runs	34
+bc	Buck falls behind wagon wheel	35
+bc	James lowers gun	36
+bc	Rufus speaks to James, looks at ground	37
+bc	James looks at Rufus	38
+bc	James looks at gun, fires at ground, throws gun on ground	39
+bc	James looks at Rufus	40
+bc	Rufus looks at James	41
+bc	Rufus climbs down from wagon, walks to Buck, James leaves duel position	42
+bc	Rufus looks at Buck, spits on Buck	43
+bc	Buck flinches, Rufus walks away, Buck looks at James	44
+bc	James stands with Jean	45
+bc	Buck turns around, looks at man with gun, lunges at man with gun	46
+bc	Rufus sees Buck, speaks to Buck	47
+bc	James and Jean look at Buck	48
+bc	Buck struggles with man with gun, takes gun, throws man aside, aims gun at James	49
+bc	Rufus draws his gun, fires	50
+bc	Buck jerks back	51
+bc	Buck falls onto side of watter barrel	52
+bc	James and Jean watch Buck	53
+bc	Buck drops gun in water	54
+bc	Rufus walks to Buck	55
+bc	Buck looks at Rufus, tries to move toward him	56
+bc	Rufus watches Buck	57
+bc	Buck continues moving toward Rufus	58
+bc	Rufus speaks to Buck, Buck continues moving toward Rufus, reaches out to Rufus, falls against wagon wheel, Rufus takes his shoulders, Buck falls limp, dies	59
+bc	James and Jean watch Rufus and Buck	60
+bc	Rufus holds Buck, lowers head	61
+sh	Shane (Alan Ladd) walks to the bar structure	0
+sh	Shane enters the bar structure	1
+sh	Jack Wilson (Jack Palance) sits at table looks at Shane	2
+sh	Shane looks at Rufus Ryker (Emile Meyer)	3
+sh	Ryker and the bartender look at shane	4
+sh	Shane looks at two other bar patrons	5
+sh	The two bar patrons look at Shane	6
+sh	Shane walks into bar, pauses, a bar patron leaves, Shane looks at Wilson	7
+sh	Wilson moves kettle on table	8
+sh	Shane continues walking, leans against bar	9
+sh	boy kneels next to dog just outside door to watch, looks at Wilson	10
+sh	Shane addresses Ryker, Ryker responds	11
+sh	boy continues to watch	12
+sh	Shane continues leaning against bar, replies to Ryker, Ryker replies to Shane, Shane replies to Ryker	13
+sh	The boy looks as Wilson, Ryker replies to Shane	14
+sh	Wilson watches Shane, Shane replies to Ryker	15
+sh	Rifleman watches Shane from second floor, Ryker replies to Shane	16
+sh	Shane replies to Ryker, Ryker replies to Shane, Shane replies to Ryker	17
+sh	The boy continues to watch, Ryker replies to Shane	18
+sh	Wilson watches Shane, Ryker continues his reply	19
+sh	Ryker finishes his reply, Shane replies to Ryker, turns to and addresses Wilson	20
+sh	Wilson drinks, sets down cup, replies to Shane, stands, begins to walk around table	21
+sh	Shane and Bartender watch Wilson	22
+sh	Wilson walks in front of table	23
+sh	Dog gets up and walks past Wilson	24
+sh	Shane continues to wach Wilson, Patron gets up, leaves bar	25
+sh	Wilson speaks to Shane	26
+sh	Shane replies to Wilson	27
+sh	Wilson replies to Shane	28
+sh	Ryker speaks to Shane	29
+sh	Ryker speaks to bartender, Shane speaks to Wilson	30
+sh	Wilson replies to Shane	31
+sh	Shane replies to Wilson	32
+sh	Wilson replies to Shane	33
+sh	Shane pushes off of bar, stands	34
+sh	Wilson watches Shane	35
+sh	Shane replies to Wilson	36
+sh	boy looks at Wilson	37
+sh	Wilson smiles at Shane	38
+sh	Shane watches Wilson	39
+sh	Wilson replies to Shane	40
+sh	Shane watches Wilson	41
+sh	Wilson draws his gun	42
+sh	Shane draws his gun and fires	43
+sh	Wilson fires and falls back against table	44
+sh	Ryker draws his gun, Shane turns to Ryker, fires his gun, Ryker fires, falls against wall	45
+sh	Wilson fires and falls into barrels	46
+sh	Rifleman watches Shane from second floor	47
+sh	Shane walks toward Ryker	48
+sh	Rifleman watches Shane from second floor	49
+sh	Shane looks at Ryker	50
+sh	Ryker lies against table, dead	51
+sh	Shane turns around	52
+sh	Bartender watches Shane	53
+sh	Shane flips gun, holsters gun	54
+sh	boy watches Shane	55
+sh	Shane walks toward door	56
+sh	Rifleman aims gun at Shane	57
+sh	boy sees man with gun	58
+sh	Rifleman aims gun at Shane	59
+sh	boy yells to Shane	60
+sh	Shane turns around, draw gun, Rifleman fires gun, Shane crouches, fires gun	61
+sh	Rifleman stumbles back against wall	62
+sh	Shane looks up at rifleman	63
+sh	Rifleman falls forward	64
+sh	Rifleman falls off second floor and through wooden beam	65
+sh	Rifleman falls onto first floor	66
+sh	boy watches man fall	67
+sh	Bartender watches Shane, Shane holsters guns, turns around	68
+sh	boy watches Shane	69
+sh	boy stands up, moves out of doorway	70
+sh	Shane stops, looks at Wilson	71
+sh	Wilson lies dead among barrels	72
+sh	Shane looks back at Rifleman and Ryker	73
+sh	Rifeman and Ryker both lie dead, Shane turns around, leaves bar structure	74
+ed	Billy Ray Smith (Anthony Edwards) is pushed out of the house, walks into street	0
+ed	Pestoso (Luis Contreras) watches Billy Ray, laughs, speaks to Billy Ray	1
+ed	Billy Ray reaches into pocket, pulls spur out of pocket, speaks to Pestoso	2
+ed	Pestoso replies to Billy Ray	3
+ed	Billy Ray replies to Pestoso	4
+ed	Pestoso replies to Billy Ray	5
+ed	Billy Ray replies to Pestoso	6
+ed	Pestoso replies to Billy Ray	7
+ed	Billy Ray pauses, speaks to Pestoso	8
+ed	Pestoso laughes replies to Billy Ray	9
+ed	Billy Ray watches pestoso	10
+ed	Pestoso begins walking toward Billy Ray	11
+ed	Billy Ray begins backing up	12
+ed	Pestoso continues walking toward Billy Ray, speaks to Billy Ray	13
+ed	Billy Ray continues backing up, puts spur in pocket	14
+ed	Pestoso continues walking toward Billy Ray	15
+ed	Billy Ray continues backing up	16
+ed	Pestoso finished walking toward Billy Ray	17
+ed	Billy Ray stops backing up	18
+ed	Pestoso breathes deeply, bystander watches Pestoso	19
+ed	Billy Ray watches Pestoso, Billy Ray's legs shake	20
+ed	Pestoso moves poncho to reveal gun, Billy Ray continues watching Pestoso, looks down	21
+ed	Billy Ray moves coat to reveal gun, Pestoso shakes arms	22
+ed	Billy Ray looks back at pestoso	23
+ed	Pestoso continues movement, adjusts belt	24
+ed	Billy Ray watches Pestoso	25
+ed	Pestoso crackes knuckles, pulls on indiviual fingers	26
+ed	Billy Ray crackes knuckles	27
+ed	Pestoso continues to pull on fingers, watches Billy Ray	28
+ed	Billy Ray pulls on individual fingers, winces in pain	29
+ed	Pestoso moves arms out of loosen them	30
+ed	Billy Ray shakes arms	31
+ed	Pestoso glances down at gun	32
+ed	Both men watch each other, Pestoso in foreground, Billy Ray in background	33
+ed	Both men watch each other, Billy Ray in foreground, Pestoso in background	34
+ed	Billy Ray watches Pestoso	35
+ed	Pestoso watches Billy Ray, laughs	36
+ed	Billy Ray watches Pestoso	37
+ed	Pestoso speaks to Billy Ray, reaches down	38
+ed	Pestoso draws gun, Billy Ray draws gun	39
+ed	Billy Ray clenches teeth, gun shot goes off	40
+ed	Billy Ray fires gun	41
+ed	Pestoso is hit by bullet, beguins stumbling	42
+ed	Billy Ray opens eyes, looks at Pestoso	43
+ed	Pestoso continues stumbling	44
+ed	Pestoso looks at Billy Ray, a bullet hole in his forehead	45
+ed	Van Leek (Louis Goessett Jr.) climbs down from bell tower	46
+ed	Billy Ray watches Pestoso, looks at gun, looks at Pestoso, Billy Ray narrates	47
+ed	Pestoso continues stumbling	48
+ed	Billy Ray watches Pestoso, Van Leek speaks to Billy Ray, Billy Ray looks back at Van Leek	49
+ed	Billy Ray turns back to Pestoso, Van Leek walks toward Billy Ray	50
+ed	Pestoso continues stumbling	51
+ed	Van Leek finishes walking to Billy Ray, speaks to Billy Ray, Billy Ray looks at Van Leek, Van Leek looks at Pestoso, blows toward Pestosos	52
+ed	Pestoso falls over	53
+ed	Van Leeks looks at Billy Ray, clicks tongue, Billy Ray nods, clicks tongue	54
+sil	Payden (Kevin Kline) walks down street 	0
+sil	Payden crosses street and turns corner	1
+sil	Cobb (Brian Dennehy) sits on rocker then stands up	2
+sil	Payden continues walking down street	3
+sil	Cobb walks down steps onto street	4
+sil	Payden continues walking down street	5
+sil	Cobb walks towards middle of street and stops	6
+sil	Payden continues walkding down street and stops	7
+sil	Stella (Linda Hunt) approaches street from alley	8
+sil	Payden and Cobb square off while Stella is in background	9
+sil	Cobb initiates dialog	10
+sil	Payden replies	11
+sil	Stella looks on from porch	12
+sil	Cobb adjusts clothing	13
+sil	Payden initiates dialog	14
+sil	Cobb replies	15
+sil	Duel begins with Payden's gun in foreground, Cobb in background	16
+sil	Alternate shot with Cobb's gun in foregroud, Payden in background	17
+sil	Duel transpires (repeat of shot10)	18
+sil	Cobb falls and dies	19
+sil	Stella reacts to duel outcome	20
+sil	Payden stares at Cobb's corpse	21
+sil	Payden holsters gun	22
+sil	Payden continues to look onto Cobb's corpse	23
+gbu	Blondie (Clint Eastwood), Sentenza (Lee VanCleef), and Tuco (Eli Wallach) stand around the center of the graveyard staring at each other	0
+gbu	Tuco watches Blondie, looks toward Sentenza	1
+gbu	Sentenza watches Tuco, looks toward Blondie	2
+gbu	Blondie watches Sentenza, looks at Tuco	3
+gbu	Tuco and Blondie watch eachother with Blondie in the foreground and Tuco in the background	4
+gbu	Tuco looks at Sentenza, with Tuco in the foreground and Sentenza in the background	5
+gbu	Sentenza looks at Blondie, with Sentenza in the foreground and Blondie in the background	6
+gbu	Sentenza grips gun with one hand, grips belt with the other	7
+gbu	Blondie stands idle with on leg on thigh and the other near gun	8
+gbu	Tuco stands with one hand at his side and the other near gun	9
+gbu	Tuco watches Sentenza, looks at Blondie	10
+gbu	Blondie watches Tuco, looks at Sentenza	11
+gbu	Sentenza watches Tuco, looks at Blondie	12
+gbu	Blondie watches Sentenza	13
+gbu	Sentenza watches Blondie	14
+gbu	Tuco shifts eyes between men	15
+gbu	Tuco's hand lower toward gun	16
+gbu	Sentenza looks at Tuco	17
+gbu	Tuco watches Sentenza	18
+gbu	Tuco's hand hovers near gun	19
+gbu	Blondie looks at Tuco	20
+gbu	Tuco looks at Blondie	21
+gbu	Blondie watches Tuco	22
+gbu	Tuco looks at Sentenza, then back at Blondie	23
+gbu	Blondie's hand hangs at side near gun	24
+gbu	Sentenza watches Blondie, looks at Tuco	25
+gbu	Tuco's hand lower toward gun	26
+gbu	Sentenza watches Tuco, looks at Blondie	27
+gbu	Sentenza grips gun with one hand, grips belt with the other	28
+gbu	Blondie watches Tuco, looks at Sentenza	29
+gbu	Sentenza grips gun with one hand, grips belt with the other	30
+gbu	Sentenza watches Blondie	31
+gbu	Blondie watches Sentenza	32
+gbu	Tuco watches Blondie, looks at Sentenza, then back at Blondie	33
+gbu	Blondie looks at Tuco	34
+gbu	Sentenza watches Blondie, looks at Tuco, then back at Blondie	35
+gbu	Sentenza grips gun with one hand, grips belt with the other	36
+gbu	Sentenza watches Blondie	37
+gbu	Blondie watches Tuco	38
+gbu	Tuco watches Blondie	39
+gbu	Sentenza watches Tuco	40
+gbu	Sentenza takes hand off belt, moves hand toward gun	41
+gbu	Sentenza watches Blondie, looks toward Tuco	42
+gbu	Tuco watches Blondie	43
+gbu	Sentenza looks at Blondie	44
+gbu	Sentenza's hand hovers over gun	45
+gbu	Sentenza looks at Blondie	46
+gbu	Blondie watches Tuco	47
+gbu	Tuco watches Blondie	48
+gbu	Sentenza's hand hovers over gun	49
+gbu	Sentenza looks at Blondie	50
+gbu	Blondie watches Tuco	51
+gbu	Tuco watches Blondie	52
+gbu	Blondie's hand hangs at side near gun	53
+gbu	Sentenza's hand hovers over gun	54
+gbu	Tuco's hand hovers near gun	55
+gbu	Blondie watches Tuco	56
+gbu	Tuco watches Blondie, looks at Sentenza, then back at Blondie	57
+gbu	Sentenza's head shifts	58
+gbu	Sentenza draws gun	59
+gbu	Tuco's head shifts	60
+gbu	Tuco draws gun	61
+gbu	Blondie draws gun, fires gun	62
+gbu	Sentenza is hit by bullet, falls, Tuco tries to fire gun	63
+gbu	Sentenza falls on dirt mound, tries to adjust self	64
+gbu	Tuco tries fo fire gun, gun does not fire, Tuco looks down at gun, looks in chambers	65
+gbu	Blondie pulls back gun hammer	66
+gbu	Tuco flinches, steps back	67
+gbu	Sentenza struggles on ground to look at Blondie, aims gun	68
+gbu	Blondie fires gun	69
+gbu	Sentenza is hit by bullet	70
+gbu	Sentenza drops gun, falls into open grave, dies	71
+gbu	Tuco looks at Blondie	72
+gbu	Blondie watches Sentenza's body	73
+gbu	Blondie lowers gun, beings walking toward Tuco, looks at Sentenza, raises gun, fires gun	74
+gbu	Sentenza's hat flies into grave	75
+gbu	Tuco looks at Blondie	76
+gbu	Blondie pulls back gun hammer, fires gun	77
+gbu	Sentenza's gun flies into grave	78
+gbu	Blondie lowers gun, stops walking, looks down, looks back up at Tuco, smiles	79
+ju	Shep Horgan (Ernest Borgnine) enters the bar structure, armed with a rifle	0
+ju	The other bar partons turn around, see Shep, move out of the way, Jubal Troop (Glenn Ford) and Red Haislipp (Charles Bronson) nottice Shep, Shep speaks to Jubal	1
+ju	Shep continues speaking to Jubal	2
+ju	Shep pulls hammer on rifle back, Jubal and Red begin standing up	3
+ju	Jubal finishes standing up, speaks to Shep	4
+ju	Shep replies to Jubal	5
+ju	Jubal watches Shep	6
+ju	Shep fires at Jubal, Jubal and Red both crouch	7
+ju	Jubal speaks to Shep, Red speaks to Shep	8
+ju	Shep replies to red, fires rifle again, Jubal crouches again	9
+ju	Jubal speaks to Shep	10
+ju	Shep replies to Jubal	11
+ju	Red picks up table	12
+ju	Red throws table at Shep	13
+ju	Shep sidesteps table	14
+ju	Red takes out gun, tosses it to Jubal	15
+ju	Jubla catches gun, fires at Shep	16
+ju	Shep stumbles agains table, looks at Jube	17
+ju	Bar patrons watch Shep	18
+ju	Shep falls, dies, Jubal and Red begin walking over to Shep	19
+ju	Jubal and Red finish walking over to Shep, Jubal kneels next to body	20
+ju	Jubal places a hand on body's back, looks up at Red, Red speaks to Jubal, Jubal looks back down at Shep	21
+ju	Red walks back, picks up Jubals hat, speaks to bar patrons	22
+ju	Bar patrons stare at Red	23
+ju	Red turns around, begins walking toward door, speaks to Jube	24
+ju	Jube looks up at Red, Red continues walking to door, speaks to Jube	25
+ju	Jube stand up, walks away from body	26
+ju	Bar patron speaks, other bar patron replies	27
+ju	Bar patrons walk toward door	28
+ju	Bar patron gets on horse, rides off	29
+csc	John O'Hanlon (James Stewart) and Harley Sullivan (Henry Fonda) walk toward bar structure, step up on front porch, Harley speaks to John	0
+csc	Harley grabs John's arm, continues speaking to him, John looks at Harley, turns, goes through door	1
+csc	Bartnder looks at John, speaks to John	2
+csc	John replies to Bartender	3
+csc	Bar patrons look at John	4
+csc	Harley walks to the side, watches John	5
+csc	John speaks to the bar patrons	6
+csc	Bar patrons move away from bar	7
+csc	Harley watches bar patrons, removes something from pocket	8
+csc	John watches bar patrons	9
+csc	Bar patrons continue moving, Corey Bannister (Robert J. Wilke) looks at John, stands up straight, turns to John	10
+csc	Bannister speaks to John	11
+csc	Harley looks at Bannister	12
+csc	Bannister watches John	13
+csc	John replies to Bannister	14
+csc	Bannister speaks to John	15
+csc	John replies to Bannister	16
+csc	Bannister replies to John	17
+csc	John replies to Bannister	18
+csc	Bannister laughs, replies to John	19
+csc	John replies to Bannister, Bannister draws gun, John draws gun	20
+csc	Harley cracks nuts in hand	21
+csc	Bannister aims at John, aims at Harley	22
+csc	John aims at Bannister, fires gun	23
+csc	Bannister falls onto table, falls onto floor, dies	24
+csc	Harley looks at Bannister, looks at nuts in hand, looks at John	25
+csc	John looks at Bannister, looks at gun	26
+csc	Harley stares at John, shakes head	27
+csc	John turns around, walks to door, pushes door, leaves	28
+csc	Harley walks to door, pushes door, leaves	29
+csc	Bartender comments about O'Hanlon	30
+qdu	Elliot Marston (Alan Rickman) speaks to O'Flynn (Ben Mendelsohn), O'Flynn walks toward Matthew Quigley (Tom Selleck), Marston Kicks O'Flynn	0
+qdu	Quigley looks at O'Flynn	1
+qdu	O'Flynn puts a gun in Quigley's belt	2
+qdu	O'Flynn steps back, draws gun, aim's gun at Quigley, steps to the side Dobkin (Tony Bonner) aims gun at Quigley, Marston speaks to Quigley	3
+qdu	Marston continues speaking to Quigley, points to Dobkin, points to O'Flynn, jerks thumbs backward	4
+qdu	Dobkin and O'Flynn back away from Quigley, Martson speaks to Quigley, backs away from Quigley	5
+qdu	Quigley watches the men, sighs, Marston speaks	6
+qdu	Marston speaks, stops moving	7
+qdu	Martson speaks to Quigley, Quigley watches Marston	8
+qdu	Martson reaches to move coat	9
+qdu	Marston moves coat to reveal gun, speaks	10
+qdu	Marston continues to speak	11
+qdu	Quigley watches Martson	12
+qdu	Marston speaks to Quigley	13
+qdu	Quigley adjusts stance	14
+qdu	O'Flynn watches Quigley, smiles	15
+qdu	Dobkin watches Quigley	16
+qdu	Marston, O'Flynn, and Dobkin stare at Quigley, Quigley stares at the three men, pulls at fingers of glove	17
+qdu	Quigley pulls off glove, looks at hand, looks at Marston, speaks to Marston	18
+qdu	Marston stares at Quigley	19
+qdu	Marston, O'Flynn, and Dobkin stare at Quigley, Guigley stares at the three men	20
+qdu	Marston, O'Flynn, and Dobkin stare at Quigley, Guigley stares at the three men	21
+qdu	Marston stares at Quigley	22
+qdu	Marston draws gun	23
+qdu	Quigley draws and fires gun	24
+qdu	Marston is hit	25
+qdu	Dobkin is hit	26
+qdu	O'Flynn falls back	27
+qdu	Smoke clears, Quigley looks at 3 men	28
+qdu	Marston falls over, Dobkin and O'Flynn lie dead, Quigley walks to Marston	29
+qdu	Quigley looks down at Marston	30
+qdu	Marston looks up at Quigley, bleeding to death	31
+qdu	Quigley speaks to Marston	32
+qdu	Marston laughs	33
+qdu	Quigley holsters gun	34
+qdu	Marston dies	35
+jw	The bounty hunter approaches the bar	0
+jw	A dog outside growls at the bounty hunter	1
+jw	Josey Wales (Clint Eastwood) watches out the window	2
+jw	The bounty hunter pushes open the door and enters the bar	3
+jw	The bartender speaks to the bounty hunter	4
+jw	The bounty hunter states his intent to find Josey wales	5
+jw	A young woman looks at the bounty hunter	6
+jw	An old woman turns around to look at the bounty hunter	7
+jw	An old man turns to look at the bounty hunter	8
+jw	Wales responds to the bounty hunter	9
+jw	The man turns to Wales and speaks	10
+jw	Wales responds to the bounty hunter	11
+jw	The bounty hunter continues to stare at Wales	12
+jw	Wales asks who the bounty hunter is	13
+jw	The bounty hunter replies	14
+jw	Wales replies	15
+jw	The bounty hunter continues to stare at Wales	16
+jw	Wales continues his reply	17
+jw	The bounty hunter continues to stare at Wales	18
+jw	Wales stares at the bounty hunter	19
+jw	The bounty hunter turns and leaves the bar	20
+jw	Wales watches the bounty hunter go	21
+jw	The young woman looks away from the door	22
+jw	The bartender and man at the bar return to their drink	23
+jw	The old woman and her company continue to stare at the door	24
+jw	The old man continues to stare at the door	25
+jw	Wales stares at the bounty hunter	26
+jw	The bounty hunter reenters the bar	27
+jw	Wales stares at the bounty hunter	28
+jw	The young woman looks at the bounty hunter	29
+jw	The old man looks at the bounty hunter	30
+jw	The old woman and her company stare at the bounty hunter	31
+jw	The bartender and the man at the bar stare at the bounty hunter	32
+jw	Two other patrons look at the bounty hunter	33
+jw	The bounty hunter speaks to Wales	34
+jw	Wales replies	35
+jw	The bounty hunter draws his gun	36
+jw	Wales draws his gun and fires	37
+jw	The bouny hunter falls backward out of the bar	38
+jw	The bounty hunter hits the ground and dies	39
+jw	The bounty hunter's partner sees him dead and runs	40
+jw	Wales stares at the door	41
+jw	The old man stares at the door	42
+jw	The old woman and her company stare at the bounty hunter	43
+gfs	Ben Orcutt (Forrest Tucker) turns corner, takes out match, lights match, lights cigarette, continues walking, shakes match, sees horse	0
+gfs	Barn is shown, a horse is tied up at a fence post	1
+gfs	Orcutt puts out cigarette, begins walking, throws cigarette away, Brazos Kane (Randolph Scott) speaks to Orcutt, Orcutt stops walking, raises hands, speaks to Brazos, Brazos replies to Orcutt, Orcutt turns around, Brazos stands with hands raised	2
+gfs	Orcutt watches Brazos	3
+gfs	Brazos watches Orcutt, speaks to Orcutt	4
+gfs	Orcutt draws, Brazos fires offscreen, Orcutt falls to his knees, drops gun, falls over, dead	5
+gfs	Bard Macky (Bruce Cabot), opens door, exits house, looks around, sees Brazos	6
+gfs	Brazos and Bard walk toward each other, stop, Bard draws gun, Brazos draws gun, fires gun	7
+gfs	Bard drops gun, falls over	8
+gfs	Bard tries crawls, grabs gun, Brazos fires off screen, Bard rolls over, dead	9
+gfs	Bess Banner (Barbara Britton) runs out of house, speaks to Mr. Banner (Griff Barnett), runs down stairs, grabs gun	10
+gfs	Bess aims gun at Mr. Banner, Mr. Banner speaks to Brazos, Brazos turns toward Mr. Banner, Bess fires gun, drops gun, runs to Mr. Banner, hugs Mr. Banner, Mr. Banner speaks to Bess, Bess replies to Mr. Banner, Mr. Banner replies to Bess, drops gun	11
+gfs	Brazos holsters gun, turns, walks away	12
+3a	Ned Nederlander (Martin Short) speaks to crowd	0
+3a	Guapo (Abel Franco) smiles at Ned, Ned continues to speak	1
+3a	Ned continues speaking, turns, speaks to German (Kai Wulff), German draws gun	2
+3a	German turns, aims gun, fires gun	3
+3a	German fires gun several times at pinata, pinata body falls to ground	4
+3a	Dusty Bottoms (Chevy Chase) flinches, grabs hat	5
+3a	Guapo smiles at pinata	6
+3a	Ned turns to German, German speaks to Ned	7
+3a	German continues speaking	8
+3a	German turns, walks away from Ned	9
+3a	German walks toward duel position	10
+3a	Jefe stands up from chair, walks off of stage	11
+3a	Jefe walks to Ned, grabs Ned's shoulders, turns Ned around	12
+3a	Jefe puts arm around Ned	13
+3a	German continues walking	14
+3a	German turns around	15
+3a	Jefe and Ned walk to duel position, Ned turns head to Dusty	16
+3a	Dusty shrugs, nods at Ned	17
+3a	Jefe and Ned continue walking to duel position, bandit turns Ned around	18
+3a	Men on stage watch Ned, Guapo lights cigar, shakes out match	19
+3a	Bandit 2 walks to Ned and Jefe, gives gun to Jefe, Jefe speaks to Ned	20
+3a	Jefe continues speaking to Ned, German speaks to Ned	21
+3a	German continues speaking to Ned	22
+3a	Jefe takes gun out of Ned's holster, puts gun in Ned's belt, holds out gun for Ned, Ned takes gun	23
+3a	Ned is pulled down by gun's weight, pulls gun back up, attempts to put it in holster	24
+3a	Ned misses the holster, stumbles to the side, Bandit 2 keeps Ned from falling over, Ned puts gun in holster, Jefe grabs Ned, kisses his cheek	25
+3a	Jefe kisses Ned's other cheek, lets go of Ned	26
+3a	Ned looks at Jefe	27
+3a	Jefe laughs at Ned	28
+3a	Bandits 1 and 2 turn and walk away	29
+3a	Bandits 1 and 2 walk past Dusty, Dusty smiles at them	30
+3a	Jefe steps onto stage, sits down in chair	31
+3a	Ned stands in place, watches German	32
+3a	German stands in place, watches Ned	33
+3a	Both men watch eachother with German in foreground, crowd turns to German	34
+3a	German's gun is shown in holster, German watches Ned	35
+3a	German and Ned are shown with German's gun in foreground	36
+3a	German and Ned are shown with Neds's gun in foreground	37
+3a	Guapo watches Ned, inhales cigar	38
+3a	Area is shown, Ned and German stand	39
+3a	German is watches Ned	40
+3a	Ned watches German	41
+3a	German's eyes are shown, watches Ned	42
+3a	Ned's eyes are shown, watches German	43
+3a	German draws gun	44
+3a	Ned draws gun	45
+3a	Ned fire guns	46
+3a	German is thrown backward on the ground, dead	47
+3a	Ned flies backward	48
+3a	Ned flies into horse, throws gun up	49
+3a	Lucky Day (Steve Martin) catches gun	50
+3a	Suited man 1 stands up	51
+3a	Lucky stands up	52
+3a	Suited man 1 draws gun, fires gun	53
+3a	Lucky aims gun, fires	54
+3a	Suited man 1 falls back, dead, suited man 2 stands up, draws gun	55
+3a	Dusty Bottoms bends down	56
+3a	Dusty takes knife from bandit's boot	57
+3a	Dusty throws knife	58
+3a	Knife pins suited man 2's arm sleeve to post	59
+3a	Ned looks at Bandit 3	60
+3a	Bandit 3 aims gun	61
+3a	Ned draws gun	62
+3a	Guapo looks at Bandit 3	63
+3a	Ned fires gun	64
+3a	Bandit 3 falls off roof	65
+3a	Ned turns to Guapo	66
+3a	Guapo Stands up, throws cigarette down	67
+ts	Doc Holiday (Val Kilmer) walks from between 2 trees into a clearing	0
+ts	Johnny Ringo (Michael Biehn) notices Doc and greets him, thinking he's Wyatt Earp	1
+ts	Johnny Ringo pushes off his tree and begins to approach Doc	2
+ts	Johnny continues to approach Doc and speaks to him	3
+ts	Doc continues to approach Johnny and speaks, revealing who he is	4
+ts	Johnny stops approaching Doc	5
+ts	Doc continues to approach johnny and speaks to him	6
+ts	Johhny replies to Doc, not intending to fight him	7
+ts	Doc replies for Johnny, persisting on the fight	8
+ts	Johnny replies to Doc, continuing to refuse	9
+ts	Doc replies, still persisting	10
+ts	Johnny stares at Doc	11
+ts	Doc reaches to move his coat aside	12
+ts	Doc continues his reply and moves his coat to show his badge	13
+ts	Johnny continues starting at Doc	14
+ts	Doc stares at Johnny	15
+ts	Johnny replies to Doc, smiling and consenting to the duel	16
+ts	Doc begins circling Johnny	17
+ts	Doc and Johnny circle each other	18
+ts	The two continue circling, Johnny in background, Doc in foreground	19
+ts	The two continue circling, Doc in background, Johnny in foreground	20
+ts	The two stop circling, Johnny in background, Doc in foreground	21
+ts	Doc stands and watches Johnny	22
+ts	Both men watch one another, Doc in foreground, Johnny in background	23
+ts	Doc continues to watch Johnny	24
+ts	Johnny continues to watch Doc	25
+ts	Docs eyes are shown close up and he speaks to Johnny	26
+ts	The two men are shown, staring at each other	27
+ts	Johnny continues to watch Doc	28
+ts	Johnny's hand slowly slides toward his gun	29
+ts	Doc's mouth is shown, smirking	30
+ts	Doc taps the handle of his gun	31
+ts	Docs eyes are shown close up	32
+ts	Johnny's eyes are shown close up	33
+ts	Johnny grabs his gun, pulls back the hammer, and draws	34
+ts	Johnny begins to point his gun, Doc draws his gun	35
+ts	Doc fires his gun	36
+ts	Johnny's head jerks back from the shot	37
+ts	Johnny stumbles back a step from the shot	38
+ts	Doc holsters his gun	39
+ts	Doc provokes the dying Johnny and backs up, Johnny moves toward him	40
+ts	Doc continues to provoke Johnny	41
+ts	Johnny continues stumbling forward	42
+ts	Johnny fires his gun at the ground	43
+ts	Johnny continues stumbling forward	44
+ts	Doc taunts Johnny	45
+ts	Johnny falls forward against a tree and dies	46
+ts	Doc kneels down to Johnny, speaks to him, removes badge from his shirt and puts it on the corpse, then hears movement and turns, reaching for his gun	47
+ts	Wyatt Earp (Kurt Russell) runs toward the scene of the duel	48
+ts	Wyatt looks at Doc and the corpse of Johnny Ringo	49
+ts	Doc turns back to Johnny and stands up, Wyatt joins him and Doc speaks to Wyatt	50
+ts	Wyatt looks at Doc	51
+bs	Taggart (Slim Pickens) sits on horse, speaks to Bart (Cleavon Little), points at Bart	0
+bs	Bart replies to Taggart	1
+bs	Taggart speaks to thugs, looks around at thugs, Lyle (Burton Gilliam) leans on Taggart, speaks to Taggart, Taggart replies to Lyle, Lyle speaks to thugs	2
+bs	Jim (Gene Wilder) speaks to thugs	3
+bs	Lyle speaks to thugs	4
+bs	Jim licks hand, blows on hand, Lyle continues speaking to thugs	5
+bs	thugs all hold aim guns, Lyle counts	6
+bs	thugs pull back gun hammers, Lyle continues to count	7
+bs	Jim watches thugs	8
+bs	thugs continue pulling back hammers, Lyle continues to count	9
+bs	Jim draws guns and fires	10
+bs	Guns fly out of thugs' hands, thugs clutch hands in pain	11
+bs	Jim watches thugs	12
+bs	thugs clutch and shake hands in pain	13
+bs	thugs clutch and shake hands in pain	14
+bs	Jim holds out hands, crowd high fives him continuously	15
+bs	Taggart looks at thugs, Lyle shakes hand in pain, Bart speaks to thugs	16
+bs	Bart continues speaking, draws gun, pulls gun hammer back	17
+bs	thugs clap hands 	18
+fdm	Col. Douglas Mortimer (Lee Van Cleef) aims pistol	0
+fdm	Nino (Mario Brega) runs out of building	1
+fdm	The Colonel turns and fires pistol	2
+fdm	Nino falls in mid run, dies	3
+fdm	The Colonel moves out rom behind rock and runs toward building	4
+fdm	El Indio (Gian Maria Volonte) opens door of building, fires pistol	5
+fdm	The Colonel loses his pistol, stops running, looks at El Indio	6
+fdm	El indio lowers pistol	7
+fdm	The Colonel watch El Indio	8
+fdm	El Indio leaves building, walks down stairs	9
+fdm	The Colonel watch El Indio	10
+fdm	El Indio walks toward the Colonel, the Colone watches El Indio	11
+fdm	El Indio holsters pistol, holds out locket, speaks the the Colonel	12
+fdm	El Indio continues speaking, the Colonel watches El Indio	13
+fdm	El Indio finishes speaking, opens locket, locket begins playing music	14
+fdm	Music continues playing, the Colonel looks downward	15
+fdm	The Colonel's pistol lies on the ground	16
+fdm	The Colonel looks back at El Indio	17
+fdm	El Indio slowly walks closer to the Colonel, looks down at locket	18
+fdm	El Indio stares at Locket, the Colonel watches El Indio, El Indio is in foreground, the Colonel in background	19
+fdm	The Colonel watches El Indio, the Colonel is in foreground, El Indio in background	20
+fdm	The Colonel continues to watch El Indio	21
+fdm	El Indio watches the Colonel	22
+fdm	The Colonel continues to watch El Indio	23
+fdm	El Indio continues to watch the Colonel	24
+fdm	The Colonel continues to watch El Indio, looks down at pistol	25
+fdm	The Colonel's pistol lies on the ground	26
+fdm	The Colonel looks back at El Indio	27
+fdm	El Indio's hand lies at his side	28
+fdm	El Indio continues to watch the Colonel	29
+fdm	El Indio's hand moves toward his pistol	30
+fdm	El Indio watches the Colonel, looks to the side, another locket begins playing music	31
+fdm	The Colonel looks to the side	32
+fdm	Both men look toward camera, Monco's (Clint Eastwood) hand appears, holding another locket	33
+fdm	The Colonel reaches into vest pocket, pulls out chain	34
+fdm	Chain does not have locket on the end	35
+fdm	The Colonel looks back up at Monco	36
+fdm	Monco holds locket, watches El Indio	37
+fdm	El Indio watches Monco, turns to look at the Colonel	38
+fdm	The Colonel watches Monco	39
+fdm	Monco watches El Indio, begins walking 	40
+fdm	Monco walks toward duel ground	41
+fdm	El Indio reaches for pistol	42
+fdm	Monco continues walking, aims rifle at El Indio, shakes head	43
+fdm	El Indio takes hand away from pistol	44
+fdm	Monco looks at the Colonel, glances at locket, speaks to the Colonel	45
+fdm	The Colonel watches Monco	46
+fdm	Monco looks back at El Indio, walks toward the Colonel, El Indio watches Monco, closes locket	47
+fdm	Monco backs up next to the Colonel	48
+fdm	El Indio watches the Colonel and Monco	49
+fdm	Monco takes off belt, holds belt out to the Colonel, speaks to the Colone, the Colonel removes own belt, takes the belt, puts belt on, Monco speaks to El Indio	50
+fdm	The Colonel finishes putting on the belt, Monco walks to edge of duel ground, begins sitting down	51
+fdm	Monco finishes sitting down	52
+fdm	El Indio watches the Colonel	53
+fdm	The Colonel watches El Indio	54
+fdm	The Colonel continues watching El Indio	55
+fdm	El Indio continues watching the Colonel	56
+fdm	The Colonel continues watching El Indio	57
+fdm	El Indio continues watching the Colonel	58
+fdm	Monco watches El Indio, looks at locket	59
+fdm	Locket music slows	60
+fdm	Monco looks back up at El Indio	61
+fdm	The Colonel and El Indio face each other	62
+fdm	The Colonel and El Indio face each other, the Colonel is in the foreground, El Indio is in the background	63
+fdm	The Colonel watches El Indio	64
+fdm	Monco looks from the Colonel to El Indio	65
+fdm	El Indio watches the Colonel	66
+fdm	The Colonel watches El Indio	67
+fdm	El Indio watches the Colonel	68
+fdm	El Indio's hand moves toward pistol	69
+fdm	El Indio watches the Colonel	70
+fdm	El Indio's hand moves toward pistol	71
+fdm	The Colonel watches El Indio	72
+fdm	Monco looks at the Colonel, looks at El Indio	73
+fdm	El Indio draws his pistol	74
+fdm	The Colonel draws his pistol, fires	75
+fdm	El Indio his hit, falls back onto ground	76
+fdm	El Indio finishes falling	77
+fdm	Monco watches El Indio	78
+fdm	El Indio crawls backward, leans against rock, aims pistol	79
+fdm	Monco watches El Indio	80
+fdm	The Colonel pulls the pistol hammer back	81
+fdm	El Indio aims gun at the Colonel, dies	82
+fdm	The Colonel watches El Indio	83
+fdm	Monco spits, looks at the Colonel, speaks to the Colonel	84
+fdm	The Colonel looks at Monco	85
+fdm	The Colonel holsters Monco's pistol	86
+fdm	Monco watches the Colonel	87
+fdm	The Colonel walks toward El Indio	88
+fdm	Monco watches the Colonel	89
+mnn	Nessuno (Terrence Hill) stands in street, crowd rushes to get out of the way	0
+mnn	Crowd continues rushing	1
+mnn	Crowd continues rushing, Jack Beauregard (Henry Fonda) walks into street	2
+mnn	Crowd continues rusing, camera man runs from side street onto porch with camera, assistant follows	3
+mnn	Jack watches Nessuno	4
+mnn	Nessuno looks around street, looks at Jack	5
+mnn	Both Jack and Nessuno watch each other	6
+mnn	Nessuno watches Jack	7
+mnn	Jack watches Nessuno	8
+mnn	Camera focuses on the two men (camera POV)	9
+mnn	Cameraman pulls cover off, grunts to Nessuno	10
+mnn	Nessuno looks at Cameraman	11
+mnn	Cameraman points to Nessuno, indicates moving over to Nessuno's right	12
+mnn	Nessuno points thumb to his right, steps to his right	13
+mnn	Cameraman pulls cover off	14
+mnn	Camera focuses on the two men, Nessuno continues stepping to his right (camera POV)	15
+mnn	Cameraman gets button ready	16
+mnn	Nessuno finishes stepping to the right	17
+mnn	Cameraman holds button up	18
+mnn	Nessuno nods, adjusts hat	19
+mnn	Jack pulls coat away to reveal gun	20
+mnn	Nessuno pulls off coat	21
+mnn	Nessuno continues to pull off coat, drops coat to ground	22
+mnn	Crowd watches Nessuno, looks at Jack	23
+mnn	Jack watches Nessuno	24
+mnn	Crowd watches both men	25
+mnn	Both Jack and Nessuno watch each other	26
+mnn	Jack watches Nessuno	27
+mnn	Nessuno watches Jack	28
+mnn	Cameraman holds button ready, assistant holds powder tray	29
+mnn	Nessuno watches Jack	30
+mnn	Jack watches Nessuno	31
+mnn	Nessuno watches Jack	32
+mnn	Cameraman focuses on both men	33
+mnn	Jack draws gun, Nessuno draws gun, fires gun (camera POV)	34
+mnn	Jack is hit by bullet	35
+mnn	Jack stumbles, cameraman takes off cover	36
+mnn	Assistant lowers powder tray, pokes powder, cameraman looks at powder tray, takes power tray, fiddles with powder, looks at Nessuno, puts cover back on	37
+mnn	Jack looks down at wound, looks up at Nessuno	38
+mnn	Nessuno speaks to Jack	39
+mnn	Jack watches Nessuno, laughs, begins turning	40
+mnn	Jack turns toward cameraman	41
+mnn	Cameraman presses button	42
+mnn	Jack falls to knees, camera takes picture (camera POV)	43
+hg	Andy Warshaw (Steve Ihnat) sits on fence, looks backward at approaching riders, thugA sits on horse, watches approaching riders	0
+hg	Riders approach pen, thugB looks at riders, nudges thugC, speaks to thugC, thugC looks at riders, replies to thugB, both men lean back	1
+hg	Warshaw looks away from riders	2
+hg	riders 3 and 4 approach thugs B and C, rider 1 aims gun at thugs, thugs B and C stand up, thugB crosses arms	3
+hg	Rider 5, Doc Holiday (Jason Robards), and Wyatt Earp (James Garner) sit on horses, watch Warshaw, Warshaw puts cigarette in mouth, puts hand in vest pocket, Rider 5 speaks to Warshaw, Warshaw strikes match on post, lights cigarette, replies to Rider 5, Rider 5 speaks to man on horse	4
+hg	Rider 5 continues speaking to thugA, thugA dismounts from horse, leads horse away, Warshaw speaks to Rider 5	5
+hg	Wyatt replies to Warshaw, shifts leg over horse, Warshaw turns to look at men, puts left leg on fense, replies to Wyatt, Watt replies to Warshaw, Warshaw replies to Wyatt, Wyatt replies to Warshaw	6
+hg	Warshaw replies to Wyatt	7
+hg	Wyatt replies to Warshaw	8
+hg	Warshaw replies to Wyatt	9
+hg	Warshaw continues to reply to Wyatt, Wyatt replies to Warshaw, Warshaw replies to Wyatt, Wyatt replies to Warshaw, Warshaw replies to Wyatt, Wyatt replies to Warshaw, Warshaw replies to Wyatt, Wyatt replies to Warshaw, Warshaw replies to Wyatt, glances back at Pen, Wyatt replies to Warshaw	10
+hg	Warshaw replies to Wyatt	11
+hg	Wyatt interrupts Warshaw	12
+hg	Warshaw replies to Wyatt	13
+hg	Wyatt closes eyes, opens eyes, speaks to Warshaw	14
+hg	Warshaw replies to Wyatt	15
+hg	Wyatt speaks to Warshaw	16
+hg	Warshaw watches Wyatt	17
+hg	Riders 3-5 and Doc lower heads	18
+hg	Wyatt starts dismounting from horse	19
+hg	Warshaw begins dismounting fence	20
+hg	Wyatt finishes dismouting horse, Warshaw finishes dismounting fence, Wyatt speaks to Warshaw, Warshaw replies to Wyatt, Wyatt replies to Warshaw	21
+hg	Wyatt continues speaking to Warshaw, Warshaw watches Wyatt	22
+hg	Wyatt watche Warshaw, continues speaking to Warshaw	23
+hg	Rider 3 speaks to Wyatt	24
+hg	Wyatt replies to rider 3	25
+hg	Rider 5 replies to Wyatt, Warshaw watches Wyatt	26
+hg	Rider 5 continues replying to Wyatt, Wyatt watches Warshaw, Wyatt replies to rider 3	27
+hg	Warshaw watches Wyatt, speaks to Wyatt, throws cigarette on the ground	28
+hg	Wyatt speaks to Warshaw	29
+hg	Warshaw watches Wyatt, Wyatt begins counting	30
+hg	Warshaw draws gun, Wyatt finishes counting, draws gun, fires gun, Warshaw is thrown back, Wyatt fires again	31
+hg	Warshaw stumbles, Wyatt fires again, Warshaw falls back against fence, grabs fence for support	32
+hg	Wyatt fires again	33
+hg	Wyatt fires again, Warshaw falls to ground	34
+hg	Wyatt fires again	35
+hg	Warshaw convulses, dies	36
+hg	Doc watches Warshaw's body, looks at Wyatt	37
+hg	Wyatt watches Warshaw's body, speaks to riders	38
+hpd	Thug walks through street, turns head	0
+hpd	Unseen person throws lantern	1
+hpd	Thug raises gun, shoots at lantern, runs to building, shoots twice at darkness, steps onto porch, stands	2
+hpd	Unknown voice speaks to thug, thug walks away from building, reloads gun 	3
+hpd	Thug looks into darkness, the Stranger (Clint Eastwood) enters frame, walks to front of burning house, thug turns around, walks toward Stranger	4
+hpd	Thug continues walking toward Stranger,	5
+hpd	Stranger stands, watches thug	6
+hpd	Thug continues walking toward Stranger	7
+hpd	Stranger moves coat aside	8
+hpd	Thug raises gun	9
+hpd	Stranger fires gun, thug flinches, drops gun	10
+hpd	Thug speaks to Stranger	11
+hpd	Stranger lowers gun, pulls back gun hammer	12
+hpd	Stranger fires gun three times, thug is hit all times	13
+hpd	Stranger lowers gun	14
+hpd	Thug falls to his knees, speaks to Stranger	15
+hpd	Stranger watches thug	16
+hpd	Thug falls over dead	17
+hpd	Stranger watches thug	18
+hpd	Barman looks around corner of building, walks out from behind building	19
+hpd	Barman aims gun at Stranger, Mordecai (Billy Curtis) fires gun at barman	20
+hpd	Stranger looks at barman	21
+hpd	Barman turns around, falls over dead, Mordecai looks at barman, looks at Stranger	22
+hpd	Stranger smiles, nods at Mordecai	23
+hpd	Mordecai smiles	24
+tout	Johnny and Ben Yoder (Brett Tucker) walk along porch toward bar, Johnny speaks to Ben, Ben replies to Johnny	0
+tout	Johnny stops walking, looks at Ben, speaks to Ben, adjusts hat, turns to bar door, enters bar, Ben walks to side of entrance, leans against wall, adjusts hat, looks at approaching figure	1
+tout	Woodrow approaches bar, looks down at Ben	2
+tout	Ben watches Woodrow	3
+tout	Woodrow continues walking	4
+tout	Woodrow walks past Ben, stops, pushes Ben	5
+tout	Woodrow enters bar, Ben moves over to window, looks inside bar	6
+tout	Johnny stands at bar, speaks to bartender	7
+tout	The bartender takes two bottles off counter, puts bottles on bar	8
+tout	Johnny puts coins on bar, looks at bartender	9
+tout	Bartender looks at Johnny, looks passed Johnny, looks back to Johnny	10
+tout	Johnny's eyes shift to the right	11
+tout	Johnny slowly turns around, bartenders moves out of the way	12
+tout	Johnny continues turning around, Woodrow stares at Johnny	13
+tout	Johnny finishes turning around, leans against bar, drinks from bottle, speaks to Woodrow	14
+tout	Woodrow continues staring, crowds begins moving	15
+tout	Johnny watches Woodrow	16
+tout	Woodrow watches Johnny	17
+tout	Woodrow moves coat to reveal gun	18
+tout	Crowd continues moving away	19
+tout	Woodrow watches Johnny	20
+tout	Johnny watches Woodrow	21
+tout	Woodrow draw gun	22
+tout	Johnny throws bottle at Woodrow, Woodrow drops gun, cries out	23
+tout	Johnny walks toward Woodrow, kicks gun away	24
+tout	Johnny grabs Woodrow by collar	25
+tout	Crowd continues moving away, Ben watches through window, Johnny speaks to Woodrow.	26
+tout	Johnny continues holding Woodrow, continues speaking to Woodrow	27
+tout	Johnny continues speaking to Woodrow, throws Woodrow	28
+tout	Johnny walks away from Woodrow	29
+tout	Johnny walks away from Woodrow	30
+tout	Ben runs away from window	31
+tout	Johnny walks back to bar, speaks to bartender, drinks form bottle	32
+tout	Bartender stands up, walks to counters	33
+tout	Woodrow looks at Johnny, looks to the right	34
+tout	thugB moves coat	35
+tout	Bartender places bottle on counter	36
+tout	Johnny puts coins on tabe, thugB is shown in mirror moving toward Woodrow, Woodrow leans over to toward thugB	37
+tout	thugB gives gun to Woodrow	38
+tout	Johnny watches mirror	39
+tout	Woodrow raises gun	40
+tout	Johnny turns around draws gun, fires gun, fires gun again	41
+tout	Woodrow is hit by bullet, Johnny fires gun again, thus stumbles back, falls against piano	42
+tout	Ben and Rebecca Yoder (Naomi Watts) look in through window	43
+tout	Johnny straightens up	44
+tout	Woodrow falls to the floor, dies	45
+tout	Rebecca stares at Woodrow's body	46
+tout	Johnny watches Woodrow's body	47
+tout	thugB looks at Woodrow's body	48
+tout	Johnny looks at thugB	49
+tout	thugB looks at Johnny, shakes head	50
+tout	Johnny holsters gun	51
+tout	Johnny starts to turn around, looks out window	52
+tout	Rebecca looks at Johnny, looks at Woodrow's body, looks back at Johnny	53
+tout	Johnny watches Rebecca	54
+tout	Rebecca takes Ben away from window	55
+tout	Johnny stares at window	56
+qad	Spotted Horse (Jonothon Gill) draws war paint on face with finger, speaks	0
+qad	Cort (Russell Crowe) loads bullet into pistol, tests pistol hammer, aims pistol at ground, flips pistol sevral times, holsters pistol, removes coat	1
+qad	Cort throws his coat aside, rolls up left sleeve, rolls up right sleeve, adjusts vest collar, adjusts belt	2
+qad	Herod (Gene Hackman) looks from Cort to Spotted Horse	3
+qad	Spotted Horse watches Cort	4
+qad	Spotted Horse and Cort face each other	5
+qad	Cort watches Spotted Horse	6
+qad	Spotted Horse Watches Cort	7
+qad	Cort watches Spotted Horse	8
+qad	Spotted Horse Watches Cort	9
+qad	Cort watches Spotted Horse	10
+qad	Guard stands on clock tower, clock doesn't move	11
+qad	Spotted Horse reaches for gun	12
+qad	Cort watches Spotted Horse	13
+qad	Clock does not move	14
+qad	Spotted Horse watches Cort	15
+qad	Cort watches Spotted Horse	16
+qad	Clock does not move	17
+qad	Spotted Horse watches Cort	18
+qad	Cort watches Spotted Horse	19
+qad	Clock hand moves to 12, 	20
+qad	Ellen (Sharon Stone) rides horse away from town, gun shot goes off, Ellen stops, turns head back	21
+qad	Ellen looks at the town	22
+qad	Ellen turns horse and continues riding away from town	23
+qad	Cort stands on street, Spotted Horse lies on the ground, Doc Wallace (Roberts Blossom) walks into street, looks at Spotted Horse, speaks to crowd	24
+qad	Cort holsters pistol, crowd enters street, cort turns around to leave, stops, looks back	25
+qad	Spotted Horse lifts head off ground	26
+qad	Crowd runs out of street, Cort draw pistol, opens chamber, Spotted Horse speaks	27
+qad	Spotted Horse stands up, continues speaking	28
+qad	Cort speaks to Herod	29
+qad	Herod replies to Cort	30
+qad	Spotted Horse straightens, aims pistol at Cort	31
+qad	Cort watches Spotted Horse	32
+qad	Spotted Horse pulls back pistol hammer, fires pistol	33
+qad	Cort flinches/dodges, holds out hand, speaks to Herod	34
+qad	Herod shakes head, shrugs	35
+qad	Spotted Horse fires pistol, Cort looks around, speaks to crowd	36
+qad	Blind boy (Jerry Swindall) searches box of bullets	37
+qad	Cort looks at blind boy	38
+qad	Blind boy contines searching box, Cort speaks to blind boy	39
+qad	Blind boy continues searching box	40
+qad	Blind boy stares intently, Herod speaks to Cort	41
+qad	Herod continues speaking	42
+qad	Spotted Horse fires pistol	43
+qad	Lamp falls from wire, Cort flinches	44
+qad	Herod speaks to Cort	45
+qad	Spotted Horse pulls back pistol hammer	46
+qad	Cort looks at blind boy, speaks to blind boy, Spotted horse fires pistol	47
+qad	Blind boy picks up bullet	48
+qad	Blind boy takes bullet out of box, turns around	49
+qad	Spotted Horse fires pistol	50
+qad	Rope behind cort snaps, Cort looks at blind boy, speaks to blind boy	51
+qad	Blind Boy turns around, throws bullet to Cort	52
+qad	Bullet flies through the air	53
+qad	Cort looks up, jumps	54
+qad	Bullet continues to fly through the air	55
+qad	Spotted Horse takes pistol in both hands	56
+qad	Cort catches bullet	57
+qad	Cort lands on the ground	58
+qad	Cort slides bullet into chamber, closes chamber	59
+qad	Spotted Horse pulls pistol hammer back	60
+qad	Cort looks at Spotted Horse	61
+qad	Spotted Horse it shot in the head	62
+qad	Spotted Horse falls back, stands in road	63
+qad	Cort watches Spotted Horse	64
+qad	Crowd approaches Spotted Horse ,Spotted Horse raises arm and pistol	65
+qad	Cort backs away, watches Spotted Horse	66
+qad	Spotted Horse's arm falls back down	67
+qad	Herod looks at Cort, stands up	68
+qad	Ratsy (Raynor Schiene) speaks to Cort, puts shackles on Cort's wrists	69
+qad	Herod walks to Cor, claps, speaks to crowd, crowd claps, Herod puts hand on Corts shoulder, speaks to Cort, tears off Cort's priest collar, tosses collar	70
+outw	Train slows to a stop, thugA walks along sidetrain, thugB watches train	0
+outw	thugA turns and looks at thugB	1
+outw	thugB looks across train	2
+outw	Train door opens	3
+outw	thugA jerks head towards door	4
+outw	Door continues to open, thugA reaches for gun	5
+outw	thugB looks at door	6
+outw	Train worker tosses package out of train	7
+outw	thugC keeps hand on gun	8
+outw	thugC watches train	9
+outw	Train worker closes train door	10
+outw	thugA looks at thugB	11
+outw	thugB smiles and looks at the passenger car	12
+outw	thugB keeps hand on gun	13
+outw	thugB looks back at thugA, nods head away from train, looks at thugC, nods head away from train, turns around	14
+outw	thugC steps down from spot, walks toward thugB, whistle blows, thugA walks toward thugB, thugB walks awat from train, stops turns around, all three turn, walk toward horses, Harmonica music starts	15
+outw	All thugs stop, turn around, thugA looks at thugB, thugB nods, Harmonica (Charles Bronson) plays Harmonica	16
+outw	Harmonica continues playing, looks at thugs	17
+outw	Thugs watch Harmonica, Harmonica continues playing, continues watching thugs	18
+outw	thugB continues watching Harmonica	19
+outw	Harmonica finishes playing, lowers Harmonica, speaks to thugB	20
+outw	thugBs shakes head, replies to Harmonica	21
+outw	Harmonica speaks to thugB	22
+outw	thugA smiles, looks at thugB	23
+outw	thugBs looks back at horses, replies to Harmonica	24
+outw	Thugs laugh, Harmonica watches thugs, shakes head, replies to thugB	25
+outw	thugA stops smiling	26
+outw	thugB continues watching Harmonica	27
+outw	All men stare at each other	28
+outw	Harmonica stares at thugB	29
+outw	thugB reaches for gun	30
+outw	Harmonica draws gun, shoots, thugB and thugC fall back	31
+outw	thugA fires gun	32
+outw	Harmonica spins back, falls over	33
+outw	thugA falls back	34
